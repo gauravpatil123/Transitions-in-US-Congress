@@ -2,72 +2,21 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>SVG Shapes</title>
-        <script src= "https://d3js.org/d3.v7.min.js"></script>
-        <style type="text/css">
-            /*TBD*/
-
-        </style>
+        <title>Final Project</title><!--Change Title-->
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-
-        <script type="text/javascript">
-
-
-
-            //1. Create our SVG element
-            const svgCanvas = d3.select("body")
-                            .append("svg")
-                            .attr("width", 500) 
-                            .attr("height", 500)
-                            .style("background-color", "#979A9A");
-
-
-            //2. Make shapes and to SVG.
-            const rectangle = svgCanvas.append("rect") 
-                                .attr("x", 100)
-                                .attr("y", 100)
-                                .attr("width", 100)
-                                .attr("height", 350);
-                                //.attr("transform", "translate(150,150)"); //translate changes the x and y 
-
-            const circle = svgCanvas.append("circle")  
-                                .attr("cx", 200)
-                                .attr("cy", 300)
-                                .attr("r", 10)
-                                .attr("fill", "#2874A6"); //#2874A6 //#1A5276
-                                //.attr("transform", "scale(.5)");//scale is attributed to the whole coordinate system of the shape
-                                //.attr("transform", "scale(1.5)");
-
-
-            const ellipse = svgCanvas.append("ellipse")  
-                                .attr("cx", 400)
-                                .attr("cy", 200)
-                                .attr("rx", 30)
-                                .attr("ry", 100)
-                                .attr("fill", "#AED6F1");
-                                //.attr("transform", "rotate(45)"); //this rotates the shape in degrees. if one number is provided it rotates it around the coordinate system. you can provide an x and y for it to rotate around in this order: (a, x, y)
-                                //.attr("transform", "rotate(90, 400, 400)");
-
-            //NOTE: an ellipse is similar to a circle but needs an rx and ry, which would be different #s (play around with these to see how this affects the shape)
-
-            const line = svgCanvas.append("line") 
-                                .attr("x1", 5) 
-                                .attr("y1", 5)
-                                .attr("x2", 495)
-                                .attr("y2", 495)
-                                .attr("stroke", "white")
-                                .attr("stroke-width", "1px");
-
-            // NOTE: each line needs an x1 y1 and an x2 y2 (or the xy coordinates of the first point and the second point). It should also have a stroke, and stroke-width.
-
-            const text = svgCanvas.append("text") 
-                                .attr("x", 360)
-                                .attr("y", 95)
-                                .text("Hello World")
-                                .attr("font-size", "16px")
-                                .attr("fill", "#6C3483"); //#6C3483 //#8E44AD
-
-        </script>
+        <h1>The Transitions in US Congress from 2014 - 2020</h1>
+        <div class="button" id="re_button">
+            <button id="House">House</button>
+            <button id="Senate">Senate</button>
+        </div>
+        <svg></svg>
+        <div class="slidecontainer"> 
+            <p class="sliderText">Year Slider</p>
+            <input type="range" min="2014" max="2020" step="2" value="2014" class="slider" id="myRange">
+        </div>
+        <script src="index.js"></script>
     </body>
 </html>
