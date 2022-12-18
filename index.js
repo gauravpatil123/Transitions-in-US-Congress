@@ -1850,7 +1850,7 @@ function display_senate_grid(cols, dx, dy) {
 Promise.all([
     d3.csv("data/Data Collection House  - 2014 - 2020.csv"),
     d3.csv("data/Data Collection Senate - 2014 - 2020.csv"),
-    d3.json("data/CongressDetails.json")
+    d3.json("https://gauravpatil123.github.io/Transitions-in-US-Congress/data/CongressDetails.json")
 ]).then(function(files){
 
     const US_House = files[0].map(d => {return {"year" : +d["Year"], "state" : d.State, "district" : +d.District, "representative" : d.Representative, "party" : d.Party}});
