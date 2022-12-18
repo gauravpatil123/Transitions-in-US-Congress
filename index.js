@@ -1112,8 +1112,8 @@ function display_house_seats(year_dataset) {
     let louisiana_data = filter_state("Louisiana", year_dataset);
     let alaska_data = filter_state("Alaska", year_dataset);
     let hawaii_data = filter_state("Hawaii", year_dataset);
-    const north_dacota_label = state_labels_house("North Dacota", col_4_x, row_1_col_4);
-    const south_dacota_label = state_labels_house("South Dacota", col_4_x, row_2_col_4);
+    const north_dacota_label = state_labels_house("North Dakota", col_4_x, row_1_col_4);
+    const south_dacota_label = state_labels_house("South Dakota", col_4_x, row_2_col_4);
     const nebraska_label = state_labels_house("Nebraska", col_4_x, row_3_col_4);
     const arkansas_label = state_labels_house("Arkansas", col_4_x, row_4_col_4);
     const louisiana_label = state_labels_house("Louisiana", col_4_x, row_5_col_4);
@@ -1618,8 +1618,8 @@ function display_senate_seats(year_dataset) {
     let missouri_data = filter_state("Missouri", year_dataset);
     let arkansas_data = filter_state("Arkansas", year_dataset);
     let texas_data = filter_state("Texas", year_dataset);
-    const north_dacota_label = state_labels_senate("North Dacota", col_4_x, row_1_col_4);
-    const south_dacota_label = state_labels_senate("South Dacota", col_4_x, row_2_col_4);
+    const north_dacota_label = state_labels_senate("North Dakota", col_4_x, row_1_col_4);
+    const south_dacota_label = state_labels_senate("South Dakota", col_4_x, row_2_col_4);
     const missouri_label = state_labels_senate("Missouri", col_4_x, row_3_col_4);
     const arkansas_label = state_labels_senate("Arkansas", col_4_x, row_4_col_4);
     const texas_label = state_labels_senate("Texas", col_4_x, row_5_col_4);
