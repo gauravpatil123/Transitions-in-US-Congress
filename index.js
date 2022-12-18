@@ -1850,12 +1850,12 @@ function display_senate_grid(cols, dx, dy) {
 Promise.all([
     d3.csv("data/Data Collection House  - 2014 - 2020.csv"),
     d3.csv("data/Data Collection Senate - 2014 - 2020.csv"),
-    d3.json("data/CongressDetails.json")
+    //d3.json("data/CongressDetails.json")
 ]).then(function(files){
 
     const US_House = files[0].map(d => {return {"year" : +d["Year"], "state" : d.State, "district" : +d.District, "representative" : d.Representative, "party" : d.Party}});
     const US_Senate = files[1].map(d => {return {"year" : +d["Year"], "state" : d.State, "district" : +d.District, "class" : +d.Class, "representative" : d.Representative, "party" : d.Party, "current_cycle" : d["Current Cycle"], "special" : d["Special"]}});
-    const US_Congress_Details = files[2];
+    //const US_Congress_Details = files[2];
 
     let curr_US_House = US_House.filter(d => (d.year == 2014));
 
