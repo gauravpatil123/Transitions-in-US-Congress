@@ -1,0 +1,290 @@
+{
+    "House" : [
+        {
+            "year" : 2020,
+            "election date" : "November 3, 2020",
+            "leader1" : {
+                "name" : "Nancy Pelosi",
+                "party" : "Democratic",
+                "leader seat" : "California 12th",
+                "seats" : 222
+            },
+            "leader2" : {
+                "name" : "Kevin McCarthy",
+                "party" : "Republican",
+                "leader seat" : "California 23rd",
+                "seats" : 213
+            }
+        },
+
+        {
+            "year" : 2018,
+            "election date" : "November 6, 2018",
+            "leader1" : {
+                "name" : "Nancy Pelosi",
+                "party" : "Democratic",
+                "leader seat" : "California 12th",
+                "seats" : 235
+            },
+            "leader2" : {
+                "name" : "Paul Ryan",
+                "party" : "Republican",
+                "leader seat" : "Wisconsin 1st",
+                "seats" : 199
+            }
+
+        },
+
+        {
+            "year" : 2016,
+            "election date" : "November 8, 2016",
+            "leader1" : {
+                "name" : "Paul Ryan",
+                "party" : "Republican",
+                "leader seat" : "Wisconsin 1st",
+                "seats" : 241
+            },
+            "leader2" : {
+                "name" : "Nancy Pelosi",
+                "party" : "Democratic",
+                "leader seat" : "California 12th",
+                "seats" : 194
+            }
+        },
+
+        {
+            "year" : 2014,
+            "election date" : "November 4, 2014",
+            "leader1" : {
+                "name" : "John Boehner",
+                "party" : "Republican",
+                "leader seat" : "Ohio 8th",
+                "seats" : 247
+            },
+            "leader2" : {
+                "name" : "Nancy Pelosi",
+                "party" : "Democratic",
+                "leader seat" : "California 12th",
+                "seats" : 188
+            }
+        }
+
+    ],
+
+    "Senate" : [
+        {
+            "year" : 2020,
+            "election date" : "November 3, 2020",
+            "leader1" : {
+                "name" : "Chuck Schumer",
+                "party" : "Democratic",
+                "leader seat" : "New York",
+                "seats" : 48
+            },
+            "leader2" : {
+                "name" : "Mitch McConnell",
+                "party" : "Republican",
+                "leader seat" : "Kentucky",
+                "seats" : 50
+            }
+        },
+
+        {
+            "year" : 2018,
+            "election date" : "November 6, 2018",
+            "leader1" : {
+                "name" : "Mitch McConnell",
+                "party" : "Republican",
+                "leader seat" : "Kentucky",
+                "seats" : 53
+            },
+            "leader2" : {
+                "name" : "Chuck Schumer",
+                "party" : "Democratic",
+                "leader seat" : "New York",
+                "seats" : 45
+            }
+        },
+
+        {
+            "year" : 2016,
+            "election date" : "November 8, 2016",
+            "leader1" : {
+                "name" : "Mitch McConnell",
+                "party" : "Republican",
+                "leader seat" : "Kentucky",
+                "seats" : 52
+            },
+            "leader2" : {
+                "name" : "Harry Reid",
+                "party" : "Democratic",
+                "leader seat" : "Nevada",
+                "seats" : 46
+            }
+        },
+
+        {
+            "year" : 2014,
+            "election date" : "November 4, 2014",
+            "leader1" : {
+                "name" : "Mitch McConnell",
+                "party" : "Republican",
+                "leader seat" : "Kentucky",
+                "seats" : 54
+            },
+            "leader2" : {
+                "name" : "Harry Reid",
+                "party" : "Democratic",
+                "leader seat" : "Nevada",
+                "seats" : 44
+            }
+        }
+    ],
+
+    "Congress" : [
+        {
+            "year" : 2020,
+            "number" : "117th United States Congress",
+            "start" : "January 3, 2021",
+            "end" : "January 3, 2023",
+            "Bills & Resolutions" : {
+                "House" : {
+                    "introduced" : 11053,
+                    "reported" : 560,
+                    "passed" : 998
+                },
+
+                "Senate" : {
+                    "introduced" : 6095,
+                    "reported" : 441,
+                    "passed" : 870
+                }
+            },
+            "Major Events" : [
+                "January 6, 2021: A pro-Trump mob attacked the Capitol, halting the joint session to count and certify the Electoral College vote. By nightfall, the mob was cleared and vote counting resumed, with the certification made official around 3:00 a.m. on January 7.",
+                "January 13, 2021: Second impeachment of Donald Trump: House impeached President Trump for inciting the January 6 attack on the Capitol.",
+                "January 20, 2021: Joe Biden became President of the United States.",
+                "January 25, 2021: House Democrats formally send an article of impeachment against former president Donald Trump to the Senate.",
+                "February 4, 2021: House voted 230–199 on H.Res. 72, removing Representative Marjorie Taylor Greene of Georgia's 14th congressional district from the House committees on Education and Labor and the Budget.",
+                "February 9–13, 2021: Second impeachment trial of Donald Trump.",
+                "April 2, 2021: April 2021 United States Capitol car attack.",
+                "April 22, 2021: House voted 216–208 on H.R. 51 to make Washington, D.C. the nation’s 51st state.",
+                "May 12, 2021: House Republicans vote to oust Liz Cheney as conference chair for criticizing Donald Trump and opposing his attempts to reject the results of the 2020 election.",
+                "June 17, 2021: Juneteenth becomes the first newly created federal holiday since 1983.",
+                "March 21–24, 2022: Hearings are held on the nomination of Ketanji Brown Jackson to the Supreme Court.",
+                "April 6, 2022: House voted 220–203 to hold former President Donald Trump officials Peter Navarro and Dan Scavino Jr. in criminal contempt of Congress for their refusal to comply with the House Select Committee investigation on the January 6 attack.",
+                "April 7, 2022: The Senate confirmed Ketanji Brown Jackson to the United States Supreme Court.",
+                "June 9, 2022: The House Special Select Committee investigating the January 6th Insurrection held the first of several summer hearings centered around the attack.",
+                "June 24, 2022: The United States Supreme Court overturns Roe v. Wade.",
+                "July 27, 2022: The Senate passed the CHIPS and Science Act.",
+                "July 27, 2022: Senator Joe Manchin strikes a deal with Senate Majority Leader Chuck Schumer to resurrect some of President Joe Biden's climate, tax and healthcare agenda in the Inflation Reduction Act of 2022.",
+                "July 28, 2022: The House passed the CHIPS and Science Act.",
+                "August 4, 2022: The Senate voted 95–1 in favor of ratifying the accession of Sweden and Finland into NATO.",
+                "August 7, 2022: The Senate voted 51–50 to pass the Inflation Reduction Act, with Vice President Kamala Harris breaking the tie.",
+                "August 12, 2022: The House voted 220–207 to pass the Inflation Reduction Act.",
+                "August 16, 2022: President Joe Biden signed the Inflation Reduction Act into law.",
+                "August 24, 2022: President Biden canceled up to $20,000 in student loan debt.",
+                "September 13, 2022: With the swearing-in of Mary Peltola, for the first time Congress has indigenous representatives from Native Alaskan, Native American, and Native Hawaiian peoples."
+            ]
+        },
+
+        {
+            "year" : 2018,
+            "number" : "116th United States Congress",
+            "start" : "January 3, 2019",
+            "end" : "January 3, 2021",
+            "Bills & Resolutions" : {
+                "House" : {
+                    "introduced" : 10573,
+                    "reported" : 676,
+                    "passed" : 1191
+                },
+
+                "Senate" : {
+                    "introduced" : 6028,
+                    "reported" : 534,
+                    "passed" : 1018
+                }
+            },
+            "Major Events" : [
+                "December 22, 2018 – January 25, 2019: 2018–2019 United States federal government shutdown.",
+                "February 5, 2019: 2019 State of the Union Address was delayed from January 29 due to the partial government shutdown.",
+                "February 15, 2019: President Trump declared a National Emergency Concerning the Southern Border of the United States.",
+                "February 27, 2019: Former Trump lawyer Michael Cohen testified before the House Oversight and Reform Committee.",
+                "March 24, 2019: Special Counsel investigation (2017–2019): U.S. Attorney General William Barr issued a summary letter of special counsel Robert Mueller's report to congress on the investigation into Russian interference in the 2016 presidential election.",
+                "July 24, 2019: Special Counsel investigation (2017–2019): Special counsel Robert Mueller testified before the House Judiciary and Intelligence committees.",
+                "September 24, 2019: First impeachment of Donald Trump: House opened an Impeachment inquiry against Donald Trump after a whistleblower alleged the President abused his power in a phone call with the President of Ukraine.",
+                "December 13, 2019: First impeachment of Donald Trump: House Judiciary Committee approved two impeachment articles.",
+                "December 18, 2019: First impeachment of Donald Trump: House impeached President Trump.",
+                "January 16, 2020 – February 5, 2020: First impeachment of Donald Trump: Impeachment trial of Donald Trump.",
+                "March 11, 2020 : COVID-19 pandemic declared in the United States.",
+                "May 26, 2020 : Nationwide George Floyd protests start.",
+                "September 30, 2020 – January 20, 2021: White House COVID-19 outbreak.",
+                "October 26, 2020: The Senate confirmed Amy Coney Barrett to the United States Supreme Court.",
+                "November 3, 2020: 2020 United States elections were held. Joe Biden was elected the 46th President of the United States and Kamala Harris was elected the 49th Vice President of the United States, the first woman to do so."
+            ]
+        },
+
+        {
+            "year" : 2016,
+            "number" : "115th United States Congress",
+            "start" : "January 3, 2017",
+            "end" : "January 3, 2019",
+            "Bills & Resolutions" : {
+                "House" : {
+                    "introduced" : 8876,
+                    "reported" : 1084,
+                    "passed" : 1484
+                },
+
+                "Senate" : {
+                    "introduced" : 4680,
+                    "reported" : 656,
+                    "passed" : 1081
+                }
+            },
+            "Major Events" : [
+                "January 11–12, 2017: Senate took first steps to repeal the Affordable Care Act. The final vote was 51 to 48 to approve a budget resolution to allow 'broad swaths of the Affordable Care Act to be repealed through a process known as budget reconciliation'.",
+                "January 20, 2017: Donald Trump became 45th President of the United States.",
+                "February 7, 2017: Vice President Mike Pence cast the tie-breaking vote to confirm Betsy DeVos as Secretary of Education. This was the first time in United States history that a cabinet confirmation was tied in the Senate and required a tie-breaking vote.",
+                "April 6, 2017: Senate invoked the 'nuclear option' to weaken Supreme Court filibusters. Nominee Neil Gorsuch was then confirmed the next day.",
+                "June 14, 2017: Majority Whip Steve Scalise and several staffers were shot during the Congressional baseball shooting. They were practicing for the annual Congressional Baseball Game.",
+                "October 24 – December 14, 2017: 2017 United States political sexual scandals from the 'Me too' movement.",
+                "January 20–22, 2018: United States federal government shutdown of January 2018.",
+                "October 6, 2018: Senate confirms Brett Kavanaugh's nomination to the U.S. Supreme Court.",
+                "December 22, 2018 – January 25, 2019: 2018–19 United States federal government shutdown."
+            ]
+        },
+
+        {
+            "year" : 2014,
+            "number" : "114th United States Congress",
+            "start" : "January 3, 2015",
+            "end" : "January 3, 2017",
+            "Bills & Resolutions" : {
+                "House" : {
+                    "introduced" : 7774,
+                    "reported" : 868,
+                    "passed" : 1186
+                },
+
+                "Senate" : {
+                    "introduced" : 4289,
+                    "reported" : 618,
+                    "passed" : 926
+                }
+            },
+            "Major Events" : [
+                "March 3, 2015: Prime Minister of Israel Benjamin Netanyahu addressed a joint session of Congress regarding sanctions against Iran. Netanyahu was invited by Speaker John Boehner without consulting President Obama.",
+                "March 9, 2015: U.S. Senator Tom Cotton wrote & sent a letter to the leadership of the Islamic Republic of Iran, signed by 47 of the Senate's 54 Republicans, attempting to cast doubt on the Obama administration's.",
+                "March 25, 2015: Afghanistan President Ashraf Ghani addressed a joint session of Congress.",
+                "April 29, 2015: Japanese Prime Minister Shinzō Abe addressed a joint session of Congress, becoming the first Japanese leader to do so.",
+                "September 24, 2015: Pope Francis addressed a joint session of Congress, becoming the first Pope to do so.",
+                "October 29, 2015: Paul Ryan was elected to succeed John Boehner as Speaker of the House receiving 236 votes (of 432 votes cast). He is the youngest Speaker since James G. Blaine in 1869.",
+                "June 8, 2016: Indian Prime Minister Narendra Modi addressed a joint session of Congress.",
+                "June 22–23, 2016: In the wake of the Orlando nightclub shooting, Congress debated gun control reform. The U.S. House recessed for the July 4 holiday during a sit-in protest held by Democrats that halted business in the chamber for more than 24 hours.",
+                "November 8, 2016: Donald Trump and Mike Pence elected as president and vice-president in presidential elections, while the Republicans retain majority at both Senate and House of Representatives."
+            ]
+        }
+    ]
+}

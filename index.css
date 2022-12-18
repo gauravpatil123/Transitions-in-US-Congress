@@ -1,0 +1,299 @@
+@font-face {
+    font-family: "Pinyon Script";
+    src: url("fonts/Pinyon_Script/PinyonScript-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+h1{
+
+    font-size: 42pt;
+    text-align: center;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+    margin-bottom: 5px;
+    margin-top: 0px;
+
+}
+
+button{
+    background-color: #358CE8;
+    border: none;
+    color: white;
+    padding: 10px 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 37px;
+    font-weight: normal;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+    margin: 5px;
+    margin-top: 0;
+}
+
+#re_button{
+    margin-left: 15%;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+
+}
+
+svg{
+    width:3500px;
+    height:740px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PresidentTextCategory{
+    font-size: 19pt;
+    font-weight: bold;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+}
+
+.PresidentText{
+    font-size: 19pt;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+}
+
+.ChartTitle{
+
+    font-size: 30pt;
+    font-weight: bold;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+
+}
+
+.HouseStateLabels{
+
+    font-size: 12pt;
+    font-family: "Playfair Display", "Sans-Serif";
+
+}
+
+.SenateStateLabels{
+
+    font-size: 12pt;
+    font-family: "Playfair Display", "Sans-Serif";
+
+}
+
+.HouseSeats{
+
+    opacity: 100%;
+
+}
+
+.HouseSeats:hover{
+
+    stroke-width: 2pt;
+
+}
+
+.SenateSeats:hover{
+
+    stroke-width: 2pt;
+
+}
+
+.ArcLabels{
+
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+
+
+}
+
+.ArcTotalLabel{
+
+    font-size: 28pt;
+    font-weight: bold;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+
+}
+
+.ArcPartitionLine{
+
+    stroke: gray;
+    stroke-width: 2px;
+
+}
+
+.ArcHalfLabel{
+
+    font-size: 12pt;
+    fill : gray;
+    font-weight: bold;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+
+
+}
+
+#tooltip{
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    padding: 2px;    
+    text-align: center; 
+    font-family:"Playfair Display","sans-serif";
+    font-size: 12px;
+    font-weight: 550; 
+    border-radius: 8px;
+  }
+
+.DetailsPanel{
+
+    fill: none;
+    stroke: black;
+
+}
+
+.CongressTitle{
+
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+
+}
+
+.ElectionDate{
+
+    font-size: 15pt;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+    font-weight: bold;
+
+}
+
+.ChamberTitle{
+
+    font-size: 24pt;
+
+}
+
+.DetailsCategories{
+
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+
+}
+
+.DetailsBodyText{
+
+    font-size: 12pt;
+    font-family: "Playfair Display", "Sans-Serif";
+
+}
+
+.DetailsPartition{
+
+    stroke: black;
+    stroke-width: 1px;
+
+}
+
+.BillResolutions{
+
+    font-size: 24pt;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+    font-weight: bold;
+
+}
+
+.BillsCategories{
+
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+
+}
+
+.BillsNumbers{
+
+    font-size: 12pt;
+    font-family: "Playfair Display", "Sans-Serif";
+
+}
+
+.MajorEventTitle{
+
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+
+}
+
+.MajorEvents{
+
+    font-size: 11pt;
+    font-family: "Playfair Display", "Sans-Serif";
+
+}
+
+.ScrollArrow{
+
+    stroke: black;
+    stroke-width: 1px;
+
+}
+
+.ScrollText{
+
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+
+}
+
+.StarText{
+
+    font-size: 10pt;
+    font-style: italic;
+    fill: gray;
+    font-family: "Playfair Display", "Sans-Serif";
+
+}
+
+.sliderText{
+    text-align: center;
+    font-size: 24px;
+    -webkit-text-fill-color: black;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-family: "Pinyon Script", "Times", "Sans-Serif";
+}
+
+.slidecontainer {
+    width: 20%;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 21px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 0;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 21px;
+    height: 21px;
+    background: #6B99ED;
+    cursor: pointer;
+}
