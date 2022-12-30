@@ -241,9 +241,10 @@ svg{
 
 .ScrollText{
 
-    font-size: 15pt;
-    font-weight: bold;
-    font-family: "Pinyon Script", "Times", "Sans-Serif";
+    font-size: 12pt;
+    font-weight: normal;
+    font-style: italic;
+    font-family: "Playfair Display", "Times", "Sans-Serif";
 
 }
 
