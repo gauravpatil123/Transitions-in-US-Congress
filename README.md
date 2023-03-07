@@ -27,7 +27,7 @@ This is a custom builtdataset that contains data about the US Senate for the yea
 - "CongressDetails.JSON"
 This dataset contains information about the leaders of both the houses, the seats won by each party, Major events & statistical data about Bills & Resolution passed in each house of Congress.
 
-I have uploaded the all datasets in the data directory and you can find it here [data/](https://github.com/gauravpatil123/Interactive-Visualizations/tree/main/Transitions%20in%20US%20Congress/data).
+I have uploaded the all datasets in the data directory and you can find it here [data/](https://github.com/gauravpatil123/Transitions-in-US-Congress/tree/main/data).
 
 **Scripts**</br>
 - index.html</br>
