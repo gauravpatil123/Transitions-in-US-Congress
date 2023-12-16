@@ -1954,6 +1954,16 @@ Promise.all([
 
     }
 
+    function chamber_selection(chamber) {
+
+        if (chamber == "House") {
+
+        } else if (chamber == "Senate") {
+
+        }
+
+    }
+
     d3.select("input")
         .on("change", (event, d) => {
 
