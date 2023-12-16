@@ -1865,6 +1865,8 @@ Promise.all([
 
     let curr_chamber = "House"
 
+    chamber_selection(curr_chamber);
+
     let curr_year = 2014;
 
     congress_logo("data/images/Congress_Seal.png");
@@ -1958,7 +1960,14 @@ Promise.all([
 
         if (chamber == "House") {
 
+            $("#House").css("border", "0.05em solid #E81B23");
+            $("#Senate").css("border", "none");
+
+
         } else if (chamber == "Senate") {
+
+            $("#Senate").css("border", "0.05em solid #E81B23");
+            $("#House").css("border", "none");
 
         }
 
@@ -1979,6 +1988,7 @@ Promise.all([
 
             curr_chamber = "House";
             update_chart(curr_year);
+            chamber_selection(curr_chamber);
 
     })
 
@@ -1987,6 +1997,7 @@ Promise.all([
 
             curr_chamber = "Senate";
             update_chart(curr_year);
+            chamber_selection(curr_chamber);
 
     })
 
