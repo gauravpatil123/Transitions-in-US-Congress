@@ -1046,7 +1046,6 @@ function display_house_seats(year_dataset) {
     let oregon = construct_seats(5, 4, col_1_x, row_2_col_1, oregon_data, "OR");
     let california = construct_seats(53, 4, col_1_x, row_3_col_1, california_data, "CA");
 
-    
     const col_2_x = col_x_build(2);
     const row_1_col_2 = row_y_build(1, 0);
     const row_2_col_2 = row_y_build(2, 1, 1);
@@ -1095,7 +1094,6 @@ function display_house_seats(year_dataset) {
     let colorado = construct_seats(7, 4, col_3_x, row_3_col_3, colorado_data, "CO");
     let kansas = construct_seats(4, 4, col_3_x, row_4_col_3, kansas_data, "KS");
     let oklahoma = construct_seats(5, 4, col_3_x, row_5_col_3, oklahoma_data, "OK");
-    
     
     const col_4_x = col_x_build(4);
     const row_1_col_4 = row_y_build(1, 0);
