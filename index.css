@@ -135,6 +135,7 @@ svg{
     position: absolute;
     width: 120px;
     height: 60px;
+    min-height: fit-content;
     padding: 2px;    
     text-align: center; 
     font-family:"Playfair Display","sans-serif";
