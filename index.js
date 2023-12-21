@@ -13,18 +13,25 @@ const svg = d3.select("svg");
 
 // Filter functions
 function filter_state(state, dataset) {
+    /*
+    Returns filtered state dataset from inputs
+    */
 
     return dataset.filter(d => (d.state == state));
 
 }
 
 function get_party(d) {
+    //Returns party name from the input datapoint
 
     return d.party;
 
 }
 
 function party_color(party) {
+    /*
+    Identifies input party and return associated hex color for elements
+    */
 
     if (party == "Republican") {
 
@@ -55,6 +62,9 @@ function party_color(party) {
 }
 
 function party_color_tooltip(party) {
+    /*
+    Identifies input party and return associated hex color for tooltips
+    */
 
     if (party == "Republican") {
 
@@ -85,16 +95,26 @@ function party_color_tooltip(party) {
 }
 
 function log(d) {
+    // console logs input
+
     console.log(d);
+
 }
 
 function seat_color(d) {
+    /*
+    gets party of the datapoint then
+    gets color for that datapoint seat
+    Returns color hex value
+    */
 
     let party = get_party(d);
     let color = party_color(party);
     return color;
+
 }
 
+// constructing tooltip
 const tooltip = d3.select("body")
                     .append("div")
                     .attr("id", "tooltip")
