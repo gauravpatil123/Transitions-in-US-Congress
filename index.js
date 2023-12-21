@@ -121,6 +121,10 @@ const tooltip = d3.select("body")
                     .style("opacity", 0);
 
 function chamber_logo(image_path) {
+    /*
+    takes image path
+    draws chamber logo
+    */
 
     var config = {
         "logo_size" : 80
@@ -150,6 +154,10 @@ function chamber_logo(image_path) {
 }
 
 function congress_logo(image_path) {
+    /*
+    takes image path
+    draws congress logo
+    */
 
     var config = {
         "logo_size" : 80
@@ -179,6 +187,7 @@ function congress_logo(image_path) {
 }
 
 function details_panel() {
+    // draws details panel container box
 
     svg.append("rect")
         .attr("x", "1270")
@@ -190,6 +199,10 @@ function details_panel() {
 }
 
 function display_presidents_text(name) {
+    /* 
+    takes in president's name
+    displays the name along with text prefix
+    */
 
     svg.append("text")
         .attr("x", 460)
@@ -206,6 +219,10 @@ function display_presidents_text(name) {
 }
 
 function display_presidents_and_elect_text(prez_name, elect_name) {
+    /* 
+    takes in president's & president elects name
+    displays the names along with text prefix
+    */
 
     svg.append("text")
         .attr("x", 310)
