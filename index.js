@@ -276,7 +276,11 @@ function display_presidents(year) {
 }
 
 function details_text(dataset, chamber, year) {
+    /*
+    builds the text and data text in the deatils panel
+    */
 
+    //sets variables for lines in the details panel
     let congress_data = dataset["Congress"];
     let year_congress_data = congress_data.filter(d => (d.year == year));
     year_congress_data = year_congress_data[0];
@@ -408,7 +412,9 @@ function details_text(dataset, chamber, year) {
     let chamber_bills_data = bill_resolution_data[chamber];
     //console.log(chamber_bills_data);
 
+    // function to get the data of bills for the selected chamber
     function build_bills_data(chamber_bills_dataset) {
+        // returns list of bills metadata
 
         let introduced = +chamber_bills_dataset.introduced;
         let reported = +chamber_bills_dataset.reported;
@@ -420,6 +426,7 @@ function details_text(dataset, chamber, year) {
 
     }
 
+    // draws the details data on the viz
     let bills_data = build_bills_data(chamber_bills_data);
 
     let introduced_category = svg.append("text")
