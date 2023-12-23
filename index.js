@@ -951,6 +951,7 @@ function major_events(dataset, year) {
 }
 
 function state_tooltips(id, dataset) {
+    //draws tooltips on hover over state seats
 
     //console.log(dataset)
     svg.selectAll("#" + id)
@@ -981,6 +982,7 @@ function state_tooltips(id, dataset) {
 }
 
 function construct_seats(seats_num, cols, dx, dy, dataset, state) {
+    //constructs seats for states vertically
     
     let d_xg = xg + dx;
     let d_yg = yg + dy;
@@ -1021,6 +1023,7 @@ function construct_seats(seats_num, cols, dx, dy, dataset, state) {
 }
 
 function construct_seats_horizontal(seats_num, rows, dx, dy, dataset) {
+    //constructs seats for states horizontally
 
     let d_xg = xg + dx;
     let d_yg = yg + dy;
