@@ -498,6 +498,7 @@ function details_text(dataset, chamber, year) {
 }
 
 function major_events_text_2014(dataset) {
+    //writes major events for 2014
 
     let congress_data = dataset["Congress"];
     let year_congress_data = congress_data.filter(d => (d.year == 2014));
@@ -573,6 +574,7 @@ function major_events_text_2014(dataset) {
 }
 
 function major_events_text_2016(dataset) {
+    //writes major events for 2016
 
     let congress_data = dataset["Congress"];
     let year_congress_data = congress_data.filter(d => (d.year == 2016));
@@ -648,6 +650,7 @@ function major_events_text_2016(dataset) {
 }
 
 function major_events_text_2018(dataset) {
+    //writes major events for 2018
 
     let congress_data = dataset["Congress"];
     let year_congress_data = congress_data.filter(d => (d.year == 2018));
@@ -759,6 +762,7 @@ function major_events_text_2018(dataset) {
 }
 
 function major_events_text_2020(dataset) {
+    //writes major events for 2020
 
     let congress_data = dataset["Congress"];
     let year_congress_data = congress_data.filter(d => (d.year == 2020));
@@ -924,6 +928,7 @@ function major_events_text_2020(dataset) {
 }
 
 function major_events(dataset, year) {
+    //writes major events based on the year
 
     if (year == 2014) {
 
