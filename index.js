@@ -1061,6 +1061,7 @@ function construct_seats_horizontal(seats_num, rows, dx, dy, dataset) {
 }
 
 function col_x_build(col) {
+    //scale ratios to draw seats
 
     let factor = col - 1
     const out = margin_x + (factor * state_len_x) + (factor * state_gap_x);
@@ -1069,6 +1070,7 @@ function col_x_build(col) {
 }
 
 function state_len_y(y_seat_rows) {
+    //length between states seats
 
     const out = (y_seat_rows * sq_len) + ((y_seat_rows - 1) * sq_gap_y);
     return out;
@@ -1076,6 +1078,7 @@ function state_len_y(y_seat_rows) {
 }
 
 function row_y_build(row, y_seat_rows, number_states_y = 1) {
+    //ratio y space for state seats
 
     let factor = row - 1;
     let del_f = (number_states_y - 1) * sq_gap_y;
@@ -1086,6 +1089,11 @@ function row_y_build(row, y_seat_rows, number_states_y = 1) {
 }
 
 function display_house_seats(year_dataset) {
+    /*
+    gets the dataset filtered by year from input
+    sets all the ratios
+    and draws the seats for all states for HOR
+    */
 
     const col_1_x = col_x_build(1);
     const row_1_col_1 = row_y_build(1, 0);
@@ -1312,6 +1320,7 @@ function display_house_seats(year_dataset) {
 }
 
 function state_labels_house(state, x, y) {
+    //writes the state name for all states
 
     let fx = xg + x;
     let fy = yg + y - 5;
