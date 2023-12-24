@@ -1338,6 +1338,7 @@ const inner_radius = 100;
 const outer_radius = 150;
 
 function construct_arc(data, year, chamber, details_dataset) {
+    //constructs arc below details panel
 
     let dataset = data;
     let half_label_text = 0;
@@ -1427,6 +1428,8 @@ function construct_arc(data, year, chamber, details_dataset) {
 }
 
 function build_arc_dataset(dataset, year, chamber) {
+    //builds the dataset for arc vizualization based on the year
+    //TODO: change the function to behave dynamically without micromanaging data
 
     let chamber_data = dataset[chamber];
     let year_data = chamber_data.filter(d => (d.year == year));
@@ -1461,6 +1464,8 @@ function build_arc_dataset(dataset, year, chamber) {
 }
 
 function arc_color(d, dataset, year, chamber) {
+    //sets colors for arc
+    //TODO: cange fxn to work dynamically without micromanaging data
 
     let value = d.value;
     let chamber_data = dataset[chamber];
