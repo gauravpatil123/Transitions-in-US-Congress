@@ -1493,6 +1493,7 @@ function arc_color(d, dataset, year, chamber) {
 
 // Chart title
 function display_chart_title(chamber, value) {
+    //displays chart title depending on chamber
 
     let chart_text = "United States "
     let x = 0;
@@ -1529,7 +1530,8 @@ const senate_state_gap_x = 50;
 const senate_state_gap_y = 25;
 
 function construct_senate_seats(cols, dx, dy, dataset, state) {
-    
+    //constructs seats for senate chamber
+
     let d_xg = xg_s + dx;
     let d_yg = yg_s + dy;
     let fx = s_sq_len + s_sq_gap_x;
