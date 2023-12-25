@@ -1572,6 +1572,7 @@ function construct_senate_seats(cols, dx, dy, dataset, state) {
 }
 
 function col_x_build_senate(col) {
+    //scale ratios to draw seats
 
     let factor = col - 1
     const out = margin_x_senate + (factor * senate_state_len_x) + (factor * senate_state_gap_x);
@@ -1580,6 +1581,7 @@ function col_x_build_senate(col) {
 }
 
 function state_len_y_senate(y_seat_rows) {
+    //factor distance between states senate seats
 
     const out = (y_seat_rows * s_sq_len) + ((y_seat_rows - 1) * s_sq_gap_y);
     return out;
@@ -1587,6 +1589,7 @@ function state_len_y_senate(y_seat_rows) {
 }
 
 function row_y_build_senate(row, y_seat_rows, number_states_y = 1) {
+    //y distance for senate seats
 
     let factor = row - 1;
     let state_len = state_len_y_senate(y_seat_rows);
@@ -1596,6 +1599,7 @@ function row_y_build_senate(row, y_seat_rows, number_states_y = 1) {
 }
 
 function state_labels_senate(state, x, y) {
+    //labels states for senate chamber
 
     let fx = xg_s + x;
     let fy = yg_s + y - 5;
@@ -1609,6 +1613,7 @@ function state_labels_senate(state, x, y) {
 }
 
 function display_senate_seats(year_dataset) {
+    //draws the senate chamber with all its seats
 
     const col_1_x = col_x_build_senate(1);
     const row_1_col_1 = row_y_build_senate(1, 0);
