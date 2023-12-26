@@ -1845,6 +1845,8 @@ const sq_gap_y_grid = 15;
 const sq_len_grid = 30;
 
 function construct_house_grid(cols, dx, dy) {
+    //placeholder fxn for house grid view
+    //TODO: Implement this feature
 
     let d_xg = xg + dx;
     let d_yg = yg + dy;
@@ -1873,6 +1875,8 @@ function construct_house_grid(cols, dx, dy) {
 }
 
 function display_house_grid(cols, dx, dy) {
+    //place holder fxn for house grid feature
+    //TODO: implement feature
 
     const grid_house = construct_house_grid(cols, dx, dy);
     return grid_house;
