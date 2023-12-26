@@ -1891,6 +1891,8 @@ const s_sq_gap_y_grid = 25;
 const s_sq_len_grid = 50;
 
 function construct_senate_grid(cols, dx, dy) {
+    //placeholder fxn for senate grid view
+    //TODO: Implement this feature
 
     let d_xg = xg + dx;
     let d_yg = yg + dy;
@@ -1919,6 +1921,8 @@ function construct_senate_grid(cols, dx, dy) {
 }
 
 function display_senate_grid(cols, dx, dy) {
+    //place holder fxn for senate grid feature
+    //TODO: implement feature
 
     const grid_senate = construct_senate_grid(cols, dx, dy);
     return grid_senate;
