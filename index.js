@@ -1982,6 +1982,7 @@ Promise.all([
     }
 
     function update_chart(curr_year) {
+        //function to update the viz based on the year on slider
 
         svg.selectAll("g")
             .remove();
@@ -2041,6 +2042,7 @@ Promise.all([
     }
 
     function chamber_selection(chamber) {
+        //sets the css for chamber buttons
 
         if (chamber == "House") {
 
@@ -2060,6 +2062,7 @@ Promise.all([
 
     }
 
+    //event listeners for viz
     d3.select("input")
         .on("change", (event, d) => {
 
