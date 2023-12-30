@@ -1092,7 +1092,7 @@ function compile_state_house(state_name, year_dataset, dx, dy, seat_num, cols, s
     let data = filter_state(state_name, year_dataset);
     const state_label = state_labels_house(state_name, dx, dy);
     let state = construct_seats(seat_num, cols, dx, dy, data, state_ini);
-    return data, state_label, state
+    return [data, state_label, state]
 }
 
 function display_house_seats(year_dataset) {
@@ -1106,14 +1106,16 @@ function display_house_seats(year_dataset) {
     const row_1_col_1 = row_y_build(1, 0);
     const row_2_col_1 = row_y_build(2, 3, 1);
     const row_3_col_1 = row_y_build(3, 5, 2);
-    let washington_data = filter_state("Washington", year_dataset);
-    let oregon_data = filter_state("Oregon", year_dataset);
+    [washington_data, washigton_label, washington] = compile_state_house("Washington", year_dataset, col_1_x, row_1_col_1, 10, 4, "WA");
+    [oregon_data, oregon_label, oregon] = compile_state_house("Oregon", year_dataset, col_1_x, row_2_col_1, 5, 4, "OR");
+    // let washington_data = filter_state("Washington", year_dataset);
+    //let oregon_data = filter_state("Oregon", year_dataset);
     let california_data = filter_state("California", year_dataset);
-    const washigton_label = state_labels_house("Washington", col_1_x, row_1_col_1);
-    const oregon_label = state_labels_house("Oregon", col_1_x, row_2_col_1);
+    // const washigton_label = state_labels_house("Washington", col_1_x, row_1_col_1);
+    //const oregon_label = state_labels_house("Oregon", col_1_x, row_2_col_1);
     const california_label = state_labels_house("California", col_1_x, row_3_col_1);
-    let washigton = construct_seats(10, 4, col_1_x, row_1_col_1, washington_data, "WA");
-    let oregon = construct_seats(5, 4, col_1_x, row_2_col_1, oregon_data, "OR");
+    // let washigton = construct_seats(10, 4, col_1_x, row_1_col_1, washington_data, "WA");
+    //let oregon = construct_seats(5, 4, col_1_x, row_2_col_1, oregon_data, "OR");
     let california = construct_seats(53, 4, col_1_x, row_3_col_1, california_data, "CA");
 
     const col_2_x = col_x_build(2);
