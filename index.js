@@ -1108,15 +1108,16 @@ function display_house_seats(year_dataset) {
     const row_3_col_1 = row_y_build(3, 5, 2);
     [washington_data, washigton_label, washington] = compile_state_house("Washington", year_dataset, col_1_x, row_1_col_1, 10, 4, "WA");
     [oregon_data, oregon_label, oregon] = compile_state_house("Oregon", year_dataset, col_1_x, row_2_col_1, 5, 4, "OR");
+    [california_data, california_label, california] = compile_state_house("California", year_dataset, col_1_x, row_3_col_1, 53, 4, "CA");
     // let washington_data = filter_state("Washington", year_dataset);
     //let oregon_data = filter_state("Oregon", year_dataset);
-    let california_data = filter_state("California", year_dataset);
+    //let california_data = filter_state("California", year_dataset);
     // const washigton_label = state_labels_house("Washington", col_1_x, row_1_col_1);
     //const oregon_label = state_labels_house("Oregon", col_1_x, row_2_col_1);
-    const california_label = state_labels_house("California", col_1_x, row_3_col_1);
+    //const california_label = state_labels_house("California", col_1_x, row_3_col_1);
     // let washigton = construct_seats(10, 4, col_1_x, row_1_col_1, washington_data, "WA");
     //let oregon = construct_seats(5, 4, col_1_x, row_2_col_1, oregon_data, "OR");
-    let california = construct_seats(53, 4, col_1_x, row_3_col_1, california_data, "CA");
+    //let california = construct_seats(53, 4, col_1_x, row_3_col_1, california_data, "CA");
 
     const col_2_x = col_x_build(2);
     const row_1_col_2 = row_y_build(1, 0);
