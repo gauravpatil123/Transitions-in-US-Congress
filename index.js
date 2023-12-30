@@ -1088,6 +1088,10 @@ function row_y_build(row, y_seat_rows, number_states_y = 1) {
 
 }
 
+function compile_state_house() {
+    pass 
+}
+
 function display_house_seats(year_dataset) {
     /*
     gets the dataset filtered by year from input
