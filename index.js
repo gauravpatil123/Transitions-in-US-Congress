@@ -1088,8 +1088,11 @@ function row_y_build(row, y_seat_rows, number_states_y = 1) {
 
 }
 
-function compile_state_house() {
-    pass 
+function compile_state_house(state_name, year_dataset, dx, dy, seat_num, cols, state_ini) {
+    let data = filter_state(state_name, year_dataset);
+    const state_label = state_labels_house(state_name, dx, dy);
+    let state = construct_seats(seat_num, cols, dx, dy, data, state_ini);
+    return data, state_label, state
 }
 
 function display_house_seats(year_dataset) {
