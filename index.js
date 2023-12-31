@@ -1546,7 +1546,7 @@ function construct_senate_seats(cols, dx, dy, dataset, state) {
     let d_yg = yg_s + dy;
     let fx = s_sq_len + s_sq_gap_x;
     let fy = s_sq_len + s_sq_gap_y;
-    let id = state + "_senate_seats"
+    let id = state + "_senate_seat"
 
     function x_val(i) {
 
@@ -1572,7 +1572,7 @@ function construct_senate_seats(cols, dx, dy, dataset, state) {
         .attr("width", s_sq_len)
         .attr("height", s_sq_len)
         .attr("class", "SenateSeats")
-        .attr("id", id)
+        .attr("id", d => (id + d.district))
         .attr("stroke", "black")
         .attr("fill", d => (seat_color(d)))
         .attr("opacity", d => d.current_cycle == "Yes" ? "100%" : "30%");
