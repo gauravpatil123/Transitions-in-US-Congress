@@ -1014,7 +1014,7 @@ function construct_seats(seats_num, cols, dx, dy, dataset, state) {
         .attr("width", sq_len)
         .attr("height", sq_len)
         .attr("class", "HouseSeats")
-        .attr("id", id)
+        .attr("id", id) //TODO: FIX these id's they are all same for all seats they need to be unique
         .attr("stroke", "black")
         .attr("fill", d => (seat_color(d)));
 
