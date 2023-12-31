@@ -1149,9 +1149,10 @@ function display_house_seats(year_dataset) {
     // let arizona = construct_seats(9, 4, col_2_x, row_4_col_2, arizona_data, "AZ");
     // let new_mexico = construct_seats(3, 4, col_2_x, row_5_col_2, new_mexico_data, "NM");
     
-    let texas_data = filter_state("Texas", year_dataset);
-    const texas_label = state_labels_house("Texas", col_2_x, row_6_col_2); 
-    let texas = construct_seats(36, 9, col_2_x, row_6_col_2, texas_data, "TX");
+    [texas_data, texas_label, texas] = compile_state_house("Texas", year_dataset, col_2_x, row_6_col_2, 36, 9, "TX");
+    // let texas_data = filter_state("Texas", year_dataset);
+    // const texas_label = state_labels_house("Texas", col_2_x, row_6_col_2); 
+    // let texas = construct_seats(36, 9, col_2_x, row_6_col_2, texas_data, "TX");
 
     const col_3_x = col_x_build(3);
     const row_1_col_3 = row_y_build(1, 0);
