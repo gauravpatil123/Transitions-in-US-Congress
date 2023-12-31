@@ -1060,6 +1060,7 @@ function construct_seats_horizontal(seats_num, rows, dx, dy, dataset) {
 
 }
 
+//TODO: Combine dx dy builder function (below 3) into single function
 function col_x_build(col) {
     //scale ratios to draw seats
 
