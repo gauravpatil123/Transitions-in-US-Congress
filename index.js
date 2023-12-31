@@ -1111,15 +1111,6 @@ function display_house_seats(year_dataset) {
     [washington_data, washigton_label, washington] = compile_state_house("Washington", year_dataset, col_1_x, row_1_col_1, 10, 4, "WA");
     [oregon_data, oregon_label, oregon] = compile_state_house("Oregon", year_dataset, col_1_x, row_2_col_1, 5, 4, "OR");
     [california_data, california_label, california] = compile_state_house("California", year_dataset, col_1_x, row_3_col_1, 53, 4, "CA");
-    // let washington_data = filter_state("Washington", year_dataset);
-    //let oregon_data = filter_state("Oregon", year_dataset);
-    //let california_data = filter_state("California", year_dataset);
-    // const washigton_label = state_labels_house("Washington", col_1_x, row_1_col_1);
-    //const oregon_label = state_labels_house("Oregon", col_1_x, row_2_col_1);
-    //const california_label = state_labels_house("California", col_1_x, row_3_col_1);
-    // let washigton = construct_seats(10, 4, col_1_x, row_1_col_1, washington_data, "WA");
-    //let oregon = construct_seats(5, 4, col_1_x, row_2_col_1, oregon_data, "OR");
-    //let california = construct_seats(53, 4, col_1_x, row_3_col_1, california_data, "CA");
 
     const col_2_x = col_x_build(2);
     const row_1_col_2 = row_y_build(1, 0);
@@ -1133,26 +1124,8 @@ function display_house_seats(year_dataset) {
     [nevada_data, nevada_label, nevada] = compile_state_house("Nevada", year_dataset, col_2_x, row_3_col_2, 4, 4, "NV");
     [arizona_data, arizona_label, arizona] = compile_state_house("Arizona", year_dataset, col_2_x, row_4_col_2, 9, 4, "AZ");
     [new_mexico_data, new_mexico_label, new_mexico] = compile_state_house("New Mexico", year_dataset, col_2_x, row_5_col_2, 3, 4, "NM");
-    // let idaho_data = filter_state("Idaho", year_dataset);
-    // let utah_data = filter_state("Utah", year_dataset);
-    // let nevada_data = filter_state("Nevada", year_dataset);
-    // let arizona_data = filter_state("Arizona", year_dataset);
-    // let new_mexico_data = filter_state("New Mexico", year_dataset);
-    // const idaho_label = state_labels_house("Idaho", col_2_x, row_1_col_2);
-    // const utah_label = state_labels_house("Utah", col_2_x, row_2_col_2);
-    // const nevada_label = state_labels_house("Nevada", col_2_x, row_3_col_2);
-    // const arizona_label = state_labels_house("Arizona", col_2_x, row_4_col_2);
-    // const new_mexico_label = state_labels_house("New Mexico", col_2_x, row_5_col_2);
-    // let idaho = construct_seats(2, 4, col_2_x, row_1_col_2, idaho_data, "ID");
-    // let utah = construct_seats(4, 4, col_2_x, row_2_col_2, utah_data, "UT");
-    // let nevada = construct_seats(4, 4, col_2_x, row_3_col_2, nevada_data, "NV");
-    // let arizona = construct_seats(9, 4, col_2_x, row_4_col_2, arizona_data, "AZ");
-    // let new_mexico = construct_seats(3, 4, col_2_x, row_5_col_2, new_mexico_data, "NM");
     
     [texas_data, texas_label, texas] = compile_state_house("Texas", year_dataset, col_2_x, row_6_col_2, 36, 9, "TX");
-    // let texas_data = filter_state("Texas", year_dataset);
-    // const texas_label = state_labels_house("Texas", col_2_x, row_6_col_2); 
-    // let texas = construct_seats(36, 9, col_2_x, row_6_col_2, texas_data, "TX");
 
     const col_3_x = col_x_build(3);
     const row_1_col_3 = row_y_build(1, 0);
