@@ -950,6 +950,7 @@ function major_events(dataset, year) {
 
 }
 
+//TODO: Find solutions to make tooltips for unique ids instead of common ids
 function state_tooltips(id, dataset) {
     //draws tooltips on hover over state seats
 
