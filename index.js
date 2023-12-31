@@ -1014,7 +1014,7 @@ function construct_seats(seats_num, cols, dx, dy, dataset, state) {
         .attr("width", sq_len)
         .attr("height", sq_len)
         .attr("class", "HouseSeats")
-        .attr("id", d => (id + d.district))
+        .attr("id", d => (id))
         .attr("stroke", "black")
         .attr("fill", d => (seat_color(d)));
 
@@ -1573,7 +1573,7 @@ function construct_senate_seats(cols, dx, dy, dataset, state) {
         .attr("width", s_sq_len)
         .attr("height", s_sq_len)
         .attr("class", "SenateSeats")
-        .attr("id", d => (id + d.district))
+        .attr("id", d => (id))
         .attr("stroke", "black")
         .attr("fill", d => (seat_color(d)))
         .attr("opacity", d => d.current_cycle == "Yes" ? "100%" : "30%");
