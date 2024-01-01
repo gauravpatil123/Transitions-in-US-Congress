@@ -1153,21 +1153,11 @@ function display_house_seats(year_dataset) {
 
     const col_3_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 4, 3], [5, 5, 4]];
     [col_3_x, row_1_col_3, row_2_col_3, row_3_col_3, row_4_col_3, row_5_col_3] = compile_coordinates(3, col_3_row_args);
-    let montana_data = filter_state("Montana", year_dataset);
-    let wyoming_data = filter_state("Wyoming", year_dataset);
-    let colorado_data = filter_state("Colorado", year_dataset);
-    let kansas_data = filter_state("Kansas", year_dataset);
-    let oklahoma_data = filter_state("Oklahoma", year_dataset);
-    const montana_label = state_labels_house("Montana", col_3_x, row_1_col_3);
-    const wyoming_label = state_labels_house("Wyoming", col_3_x, row_2_col_3);
-    const colorado_label = state_labels_house("Colorado", col_3_x, row_3_col_3);
-    const kansas_label = state_labels_house("Kansas", col_3_x, row_4_col_3);
-    const oklahoma_label = state_labels_house("Oklahoma", col_3_x, row_5_col_3);
-    let montana = construct_seats(1, 4, col_3_x, row_1_col_3, montana_data, "MT");
-    let wyoming = construct_seats(1, 4, col_3_x, row_2_col_3, wyoming_data, "WY");
-    let colorado = construct_seats(7, 4, col_3_x, row_3_col_3, colorado_data, "CO");
-    let kansas = construct_seats(4, 4, col_3_x, row_4_col_3, kansas_data, "KS");
-    let oklahoma = construct_seats(5, 4, col_3_x, row_5_col_3, oklahoma_data, "OK");
+    [montana_data, montana_label, montana] = compile_state_house("Montana", year_dataset, col_3_x, row_1_col_3, 1, 4, "MT");
+    [wyoming_data, wyoming_label, wyoming] = compile_state_house("Wyoming", year_dataset, col_3_x, row_2_col_3, 1, 4, "WY");
+    [colorado_data, colorado_label, colorado] = compile_state_house("Colorado", year_dataset, col_3_x, row_3_col_3, 7, 4, "CO");
+    [kansas_data, kansas_label, kansas] = compile_state_house("Kansas", year_dataset, col_3_x, row_4_col_3, 4, 4, "KS");
+    [oklahoma_data, oklahoma_label, oklahoma] = compile_state_house("Oklahoma", year_dataset, col_3_x, row_5_col_3, 5, 4, "OK");
     
     const col_4_x = col_x_build(4);
     const row_1_col_4 = row_y_build(1, 0);
