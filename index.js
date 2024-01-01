@@ -1106,7 +1106,7 @@ function compile_coordinates(col, rows_args) {
 
         let arg = rows_args[i];
 
-        log(arg.length);
+        // log(arg.length);
 
         if (arg.length == 2) {
             let row = arg[0];
@@ -1123,7 +1123,7 @@ function compile_coordinates(col, rows_args) {
             out_list.push(dy);
         }
     }
-    console.log(out_list);
+    // console.log(out_list);
     return out_list;
 
 }
