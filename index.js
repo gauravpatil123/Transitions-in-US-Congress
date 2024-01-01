@@ -1159,14 +1159,8 @@ function display_house_seats(year_dataset) {
     [kansas_data, kansas_label, kansas] = compile_state_house("Kansas", year_dataset, col_3_x, row_4_col_3, 4, 4, "KS");
     [oklahoma_data, oklahoma_label, oklahoma] = compile_state_house("Oklahoma", year_dataset, col_3_x, row_5_col_3, 5, 4, "OK");
     
-    const col_4_x = col_x_build(4);
-    const row_1_col_4 = row_y_build(1, 0);
-    const row_2_col_4 = row_y_build(2, 1, 1);
-    const row_3_col_4 = row_y_build(3, 2, 2);
-    const row_4_col_4 = row_y_build(4, 3, 3);
-    const row_5_col_4 = row_y_build(5, 4, 4);
-    const row_6_col_4 = row_y_build(6, 6, 5);
-    const row_7_col_4 = row_y_build(7, 7, 6);
+    const col_4_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 3, 3], [5, 4, 4], [6, 6, 5], [7, 7, 6]];
+    [col_4_x, row_1_col_4, row_2_col_4, row_3_col_4, row_4_col_4, row_5_col_4, row_6_col_4, row_7_col_4] = compile_coordinates(4, col_4_row_args);
     let north_dacota_data = filter_state("North Dakota", year_dataset);
     let south_dacota_data = filter_state("South Dakota", year_dataset);
     let nebraska_data = filter_state("Nebraska", year_dataset);
