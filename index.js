@@ -1105,13 +1105,22 @@ function compile_coordinates(col, rows_args) {
     for (let arg in rows_args) {
 
         if (arg.length == 2) {
-            //
+            let row = arg[0];
+            let y_seat_rows = arg[1];
+            let dy = row_y_build(row, y_seat_rows);
+            out_list.push(dy);
         }
 
         if (arg.length == 3) {
-            //
+            let row = arg[0];
+            let y_seat_rows = arg[1];
+            let number_states_y = arg[2];
+            let dy = row_y_build(row, y_seat_rows, number_states_y);
+            out_list.push(dy);
         }
     }
+
+    return out_list;
 
 }
 
