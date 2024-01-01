@@ -1161,27 +1161,13 @@ function display_house_seats(year_dataset) {
     
     const col_4_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 3, 3], [5, 4, 4], [6, 6, 5], [7, 7, 6]];
     [col_4_x, row_1_col_4, row_2_col_4, row_3_col_4, row_4_col_4, row_5_col_4, row_6_col_4, row_7_col_4] = compile_coordinates(4, col_4_row_args);
-    let north_dacota_data = filter_state("North Dakota", year_dataset);
-    let south_dacota_data = filter_state("South Dakota", year_dataset);
-    let nebraska_data = filter_state("Nebraska", year_dataset);
-    let arkansas_data = filter_state("Arkansas", year_dataset);
-    let louisiana_data = filter_state("Louisiana", year_dataset);
-    let alaska_data = filter_state("Alaska", year_dataset);
-    let hawaii_data = filter_state("Hawaii", year_dataset);
-    const north_dacota_label = state_labels_house("North Dakota", col_4_x, row_1_col_4);
-    const south_dacota_label = state_labels_house("South Dakota", col_4_x, row_2_col_4);
-    const nebraska_label = state_labels_house("Nebraska", col_4_x, row_3_col_4);
-    const arkansas_label = state_labels_house("Arkansas", col_4_x, row_4_col_4);
-    const louisiana_label = state_labels_house("Louisiana", col_4_x, row_5_col_4);
-    const alaska_label = state_labels_house("Alaska", col_4_x, row_6_col_4);
-    const hawaii_label = state_labels_house("Hawaii", col_4_x, row_7_col_4);
-    let north_dacota = construct_seats(1, 4, col_4_x, row_1_col_4, north_dacota_data, "ND");
-    let south_dacota = construct_seats(1, 4, col_4_x, row_2_col_4, south_dacota_data, "SD");
-    let nebraska = construct_seats(3, 4, col_4_x, row_3_col_4, nebraska_data, "NE");
-    let arkansas = construct_seats(4, 4, col_4_x, row_4_col_4, arkansas_data, "AR");
-    let louisiana = construct_seats(6, 4, col_4_x, row_5_col_4, louisiana_data, "LA");
-    let alaska = construct_seats(1, 4, col_4_x, row_6_col_4, alaska_data, "AK");
-    let hawaii = construct_seats(2, 4, col_4_x, row_7_col_4, hawaii_data, "HI");
+    [north_dacota_data, north_dacota_label, north_dacota] = compile_state_house("North Dakota", year_dataset, col_4_x, row_1_col_4, 1, 4, "ND");
+    [south_dacota_data, south_dacota_label, south_dacota] = compile_state_house("South Dakota", year_dataset, col_4_x, row_2_col_4, 1, 4, "SD");
+    [nebraska_data, nebraska_label, nebraska] = compile_state_house("Nebraska", year_dataset, col_4_x, row_3_col_4, 3, 4, "NE");
+    [arkansas_data, arkansas_label, arkansas] = compile_state_house("Arkansas", year_dataset, col_4_x, row_4_col_4, 4, 4, "AR");
+    [louisiana_data, louisiana_label, louisiana] = compile_state_house("Louisiana", year_dataset, col_4_x, row_5_col_4, 6, 4, "LA");
+    [alaska_data, alaska_label, alaska] = compile_state_house("Alaska", year_dataset, col_4_x, row_6_col_4, 1, 4, "AK");
+    [hawaii_data, hawaii_label, hawaii] = compile_state_house("Hawaii", year_dataset, col_4_x, row_7_col_4, 2, 4, "HI");
     
     const col_5_x = col_x_build(5);
     const row_1_col_5 = row_y_build(1, 0);
