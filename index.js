@@ -1097,6 +1097,24 @@ function compile_state_house(state_name, year_dataset, dx, dy, seat_num, cols, s
     return [data, state_label, state]
 }
 
+function compile_coordinates(col, rows_args) {
+
+    const col = col_x_build(col);
+    let out_list = [col];
+
+    for (let arg in rows_args) {
+
+        if (arg.length == 2) {
+            //
+        }
+
+        if (arg.length == 3) {
+            //
+        }
+    }
+
+}
+
 function display_house_seats(year_dataset) {
     /*
     gets the dataset filtered by year from input
