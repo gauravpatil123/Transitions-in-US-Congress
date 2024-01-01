@@ -1099,10 +1099,14 @@ function compile_state_house(state_name, year_dataset, dx, dy, seat_num, cols, s
 
 function compile_coordinates(col, rows_args) {
 
-    const col = col_x_build(col);
-    let out_list = [col];
+    const col_x = col_x_build(col);
+    let out_list = [col_x];
 
-    for (let arg in rows_args) {
+    for (let i = 0; i < rows_args.length; i++) {
+
+        let arg = rows_args[i];
+
+        log(arg.length);
 
         if (arg.length == 2) {
             let row = arg[0];
@@ -1119,7 +1123,7 @@ function compile_coordinates(col, rows_args) {
             out_list.push(dy);
         }
     }
-
+    console.log(out_list);
     return out_list;
 
 }
@@ -1131,10 +1135,13 @@ function display_house_seats(year_dataset) {
     and draws the seats for all states for HOR
     */
 
-    const col_1_x = col_x_build(1);
-    const row_1_col_1 = row_y_build(1, 0);
-    const row_2_col_1 = row_y_build(2, 3, 1);
-    const row_3_col_1 = row_y_build(3, 5, 2);
+    const col_1_row_args = [[1, 0], [2, 3, 1], [3, 5, 2]];
+    // compile_coordinates(1, col_1_row_args);
+    [col_1_x, row_1_col_1, row_2_col_1, row_3_col_1] = compile_coordinates(1, col_1_row_args);
+    // const col_1_x = col_x_build(1);
+    // const row_1_col_1 = row_y_build(1, 0);
+    // const row_2_col_1 = row_y_build(2, 3, 1);
+    // const row_3_col_1 = row_y_build(3, 5, 2);
     [washington_data, washigton_label, washington] = compile_state_house("Washington", year_dataset, col_1_x, row_1_col_1, 10, 4, "WA");
     [oregon_data, oregon_label, oregon] = compile_state_house("Oregon", year_dataset, col_1_x, row_2_col_1, 5, 4, "OR");
     [california_data, california_label, california] = compile_state_house("California", year_dataset, col_1_x, row_3_col_1, 53, 4, "CA");
