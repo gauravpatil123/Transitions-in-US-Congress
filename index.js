@@ -1151,12 +1151,8 @@ function display_house_seats(year_dataset) {
     
     [texas_data, texas_label, texas] = compile_state_house("Texas", year_dataset, col_2_x, row_6_col_2, 36, 9, "TX");
 
-    const col_3_x = col_x_build(3);
-    const row_1_col_3 = row_y_build(1, 0);
-    const row_2_col_3 = row_y_build(2, 1, 1);
-    const row_3_col_3 = row_y_build(3, 2, 2);
-    const row_4_col_3 = row_y_build(4, 4, 3);
-    const row_5_col_3 = row_y_build(5, 5, 4);
+    const col_3_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 4, 3], [5, 5, 4]];
+    [col_3_x, row_1_col_3, row_2_col_3, row_3_col_3, row_4_col_3, row_5_col_3] = compile_coordinates(3, col_3_row_args);
     let montana_data = filter_state("Montana", year_dataset);
     let wyoming_data = filter_state("Wyoming", year_dataset);
     let colorado_data = filter_state("Colorado", year_dataset);
