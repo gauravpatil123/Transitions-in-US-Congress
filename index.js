@@ -1170,14 +1170,7 @@ function display_house_seats(year_dataset) {
     [hawaii_data, hawaii_label, hawaii] = compile_state_house("Hawaii", year_dataset, col_4_x, row_7_col_4, 2, 4, "HI");
     
     const col_5_row_args = [[1, 0], [2, 2, 1], [3, 3, 2], [4, 5, 3], [5, 7, 4], [6, 10, 5]];
-    [col_5_x, row_1_col_5, row_2_col_5, row_3_col_5, row_4_col_5, row_5_col5, row_6_col_5] = compile_coordinates(5, col_5_row_args);
-    // const col_5_x = col_x_build(5);
-    // const row_1_col_5 = row_y_build(1, 0);
-    // const row_2_col_5 = row_y_build(2, 2, 1);
-    // const row_3_col_5 = row_y_build(3, 3, 2);
-    // const row_4_col_5 = row_y_build(4, 5, 3);
-    // const row_5_col_5 = row_y_build(5, 7, 4);
-    // const row_6_col_5 = row_y_build(6, 10, 5);
+    [col_5_x, row_1_col_5, row_2_col_5, row_3_col_5, row_4_col_5, row_5_col_5, row_6_col_5] = compile_coordinates(5, col_5_row_args);
     let minnesota_data = filter_state("Minnesota", year_dataset);
     let iowa_data = filter_state("Iowa", year_dataset);
     let missouri_data = filter_state("Missouri", year_dataset);
