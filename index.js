@@ -1178,12 +1178,8 @@ function display_house_seats(year_dataset) {
     [tennessee_data, tennessee_label, tennessee] = compile_state_house("Tennessee", year_dataset, col_5_x, row_5_col_5, 9, 4, "TN");
     [mississippi_data, mississippi_label, mississippi] = compile_state_house("Mississippi", year_dataset, col_5_x, row_6_col_5, 4, 4, "MS");
     
-    const col_6_x = col_x_build(6);
-    const row_1_col_6 = row_y_build(1, 0);
-    const row_2_col_6 = row_y_build(2, 2, 1);
-    const row_3_col_6 = row_y_build(3, 7, 2);
-    const row_4_col_6 = row_y_build(4, 10, 3);
-    const row_5_col_6 = row_y_build(5, 12, 4);
+    const col_6_row_args = [[1, 0], [2, 2, 1], [3, 7, 2], [4, 10, 3], [5, 12, 4]];
+    [col_6_x, row_1_col_6, row_2_col_6, row_3_col_6, row_4_col_6, row_5_col_6] = compile_coordinates(6, col_6_row_args);
     let wisconsin_data = filter_state("Wisconsin", year_dataset);
     let illinois_data = filter_state("Illinois", year_dataset);
     let indiana_data = filter_state("Indiana", year_dataset);
