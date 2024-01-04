@@ -1180,21 +1180,11 @@ function display_house_seats(year_dataset) {
     
     const col_6_row_args = [[1, 0], [2, 2, 1], [3, 7, 2], [4, 10, 3], [5, 12, 4]];
     [col_6_x, row_1_col_6, row_2_col_6, row_3_col_6, row_4_col_6, row_5_col_6] = compile_coordinates(6, col_6_row_args);
-    let wisconsin_data = filter_state("Wisconsin", year_dataset);
-    let illinois_data = filter_state("Illinois", year_dataset);
-    let indiana_data = filter_state("Indiana", year_dataset);
-    let alabama_data = filter_state("Alabama", year_dataset);
-    let georgia_data = filter_state("Georgia", year_dataset);
-    const wisconsin_label = state_labels_house("Wisconsin", col_6_x, row_1_col_6);
-    const illinois_label = state_labels_house("Illinois", col_6_x, row_2_col_6);
-    const indiana_label = state_labels_house("Indiana", col_6_x, row_3_col_6);
-    const alabama_label = state_labels_house("Alabama", col_6_x, row_4_col_6);
-    const georgia_label = state_labels_house("Georgia", col_6_x, row_5_col_6);
-    let wisconsin = construct_seats(8, 4, col_6_x, row_1_col_6, wisconsin_data, "WI");
-    let illinois = construct_seats(18, 4, col_6_x, row_2_col_6, illinois_data, "IL");
-    let indiana = construct_seats(9, 4, col_6_x, row_3_col_6, indiana_data, "IN");
-    let alabama = construct_seats(7, 4, col_6_x, row_4_col_6, alabama_data, "AL");
-    let georgia = construct_seats(14, 4, col_6_x, row_5_col_6, georgia_data, "GA");
+    [wisconsin_data, wisconsin_label, wisconsin] = compile_state_house("Wisconsin", year_dataset, col_6_x, row_1_col_6, 8, 4, "WI");
+    [illinois_data, illinois_label, illinois] = compile_state_house("Illinois", year_dataset, col_6_x, row_2_col_6, 18, 4, "IL");
+    [indiana_data, indiana_label, indiana] = compile_state_house("Indiana", year_dataset, col_6_x, row_3_col_6, 9, 4, "IN");
+    [alabama_data, alabama_label, alabama] = compile_state_house("Alabama", year_dataset, col_6_x, row_4_col_6, 7, 4, "AL");
+    [georgia_data, georgia_label, georgia] = compile_state_house("Georgia", year_dataset, col_6_x, row_5_col_6, 14, 4, "GA");
     
     const col_7_x = col_x_build(7);
     const row_1_col_7 = row_y_build(1, 0);
