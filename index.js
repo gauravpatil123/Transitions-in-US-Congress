@@ -1188,22 +1188,12 @@ function display_house_seats(year_dataset) {
     
     const col_7_row_args = [[1, 0], [2, 4, 1], [3, 8, 2], [4, 9, 3], [5, 12, 4]];
     [col_7_x, row_1_col_7, row_2_col_7, row_3_col_7, row_4_col_7, row_5_col_7] = compile_coordinates(7, col_7_row_args);
-    let michigan_data = filter_state("Michigan", year_dataset);
-    let ohio_data = filter_state("Ohio", year_dataset);
-    let west_virginia_data = filter_state("West Virginia", year_dataset);
-    let virginia_data = filter_state("Virginia", year_dataset);
-    const michigan_label = state_labels_house("Michigan", col_7_x, row_1_col_7);
-    const ohio_label = state_labels_house("Ohio", col_7_x, row_2_col_7);
-    const west_virginia_label = state_labels_house("West Virginia", col_7_x, row_3_col_7);
-    const virginia_label = state_labels_house("Virginia", col_7_x, row_4_col_7);
-    let michigan = construct_seats(14, 4, col_7_x, row_1_col_7, michigan_data, "MI");
-    let ohio = construct_seats(16, 4, col_7_x, row_2_col_7, ohio_data, "OH");
-    let west_virginia = construct_seats(3, 4, col_7_x, row_3_col_7, west_virginia_data, "WV");
-    let virginia = construct_seats(11, 4, col_7_x, row_4_col_7, virginia_data, "VA");
+    [michigan_data, michigan_label, michigan] = compile_state_house("Michigan", year_dataset, col_7_x, row_1_col_7, 14, 4, "MI");
+    [ohio_data, ohio_label, ohio] = compile_state_house("Ohio", year_dataset, col_7_x, row_2_col_7, 16, 4, "OH");
+    [west_virginia_data, west_virginia_label, west_virginia] = compile_state_house("West Virginia", year_dataset, col_7_x, row_3_col_7, 3, 4, "WV");
+    [virginia_data, virginia_label, virginia] = compile_state_house("Virginia", year_dataset, col_7_x, row_4_col_7, 11, 4, "VA");
 
-    let florida_data = filter_state("Florida", year_dataset);
-    const florida_label = state_labels_house("Florida", col_7_x, row_5_col_7);
-    let florida = construct_seats(27, 7, col_7_x, row_5_col_7, florida_data, "FL");
+    [florida_data, florida_label, florida] = compile_state_house("Florida", year_dataset, col_7_x, row_5_col_7, 27, 7, "FL");
     
     const col_8_x = col_x_build(8);
     const row_1_col_8 = row_y_build(1, 0);
