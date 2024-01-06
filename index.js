@@ -1203,21 +1203,11 @@ function display_house_seats(year_dataset) {
     
     const col_9_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 9, 3], [5, 12, 4]];
     [col_9_x, row_1_col_9, row_2_col_9, row_3_col_9, row_4_col_9, row_5_col_9] = compile_coordinates(9, col_9_row_args);
-    let vermont_data = filter_state("Vermont", year_dataset);
-    let new_hampshire_data = filter_state("New Hampshire", year_dataset);
-    let new_york_data = filter_state("New York", year_dataset);
-    let new_jersey_data = filter_state("New Jersey", year_dataset);
-    let maryland_data = filter_state("Maryland", year_dataset);
-    const vermont_label = state_labels_house("Vermont", col_9_x, row_1_col_9);
-    const new_hampshire_label = state_labels_house("New Hampshire", col_9_x, row_2_col_9);
-    const new_york_label = state_labels_house("New York", col_9_x, row_3_col_9);
-    const new_jersey_label = state_labels_house("New Jersey", col_9_x, row_4_col_9);
-    const maryland_label = state_labels_house("Maryland", col_9_x, row_5_col_9);
-    let vermont = construct_seats(1, 4, col_9_x, row_1_col_9, vermont_data, "VT");
-    let new_hampshire = construct_seats(2, 4, col_9_x, row_2_col_9, new_hampshire_data, "NH");
-    let new_york = construct_seats(27, 4, col_9_x, row_3_col_9, new_york_data, "NY");
-    let new_jersey = construct_seats(12, 4, col_9_x, row_4_col_9,new_jersey_data, "NJ");
-    let maryland = construct_seats(8, 4, col_9_x, row_5_col_9, maryland_data, "MD");
+    [vermont_data, vermont_label, vermont] = compile_state_house("Vermont", year_dataset, col_9_x, row_1_col_9, 1, 4, "VT");
+    [new_hampshire_data, new_hampshire_label, new_hampshire] = compile_state_house("New Hampshire", year_dataset, col_9_x, row_2_col_9, 2, 4, "NH");
+    [new_york_data, new_york_label, new_york] = compile_state_house("New York", year_dataset, col_9_x, row_3_col_9, 27, 4, "NY");
+    [new_jersey_data, new_jersey_label, new_jersey] = compile_state_house("New Jersey", year_dataset, col_9_x, row_4_col_9, 12, 4, "NJ");
+    [maryland_data, maryland_label, maryland] = compile_state_house("Maryland", year_dataset, col_9_x, row_5_col_9, 8, 4, "MD");
     
     const col_10_x = col_x_build(10);
     const row_1_col_10 = row_y_build(1, 0);
