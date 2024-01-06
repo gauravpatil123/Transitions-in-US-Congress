@@ -1197,15 +1197,9 @@ function display_house_seats(year_dataset) {
     
     const col_8_row_args = [[1, 0], [2, 5, 1], [3, 9, 2]];
     [col_8_x, row_1_col_8, row_2_col_8, row_3_col_8] = compile_coordinates(8, col_8_row_args);
-    let pennsylvania_data = filter_state("Pennsylvania", year_dataset);
-    let north_carolina_data = filter_state("North Carolina", year_dataset);
-    let south_carolina_data = filter_state("South Carolina", year_dataset);
-    const pennsylvania_label = state_labels_house("Pennsylvania", col_8_x, row_1_col_8);
-    const north_carolina_label = state_labels_house("North Carolina", col_8_x, row_2_col_8);
-    const south_carolina_label = state_labels_house("South Carolina", col_8_x, row_3_col_8);
-    let pennsylvania = construct_seats(18, 4, col_8_x, row_1_col_8, pennsylvania_data, "PA");
-    let north_carolina = construct_seats(13, 4, col_8_x, row_2_col_8, north_carolina_data, "NC");
-    let south_carolina = construct_seats(7, 4, col_8_x, row_3_col_8, south_carolina_data, "SC");
+    [pennsylvania_data, pennsylvania_label, pennsylvania] = compile_state_house("Pennsylvania", year_dataset, col_8_x, row_1_col_8, 18, 4, "PA");
+    [north_carolina_data, north_carolina_label, north_carolina] = compile_state_house("North Carolina", year_dataset, col_8_x, row_2_col_8, 13, 4, "NC");
+    [south_carolina_data, south_carolina_label, south_carolina] = compile_state_house("South Carolina", year_dataset, col_8_x, row_3_col_8, 7, 4, "SC");
     
     const col_9_x = col_x_build(9);
     const row_1_col_9 = row_y_build(1, 0);
