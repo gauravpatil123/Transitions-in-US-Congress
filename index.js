@@ -1211,21 +1211,11 @@ function display_house_seats(year_dataset) {
     
     const col_10_row_args = [[1, 0], [2, 1, 1], [3, 4, 2], [4, 5, 3], [5, 7, 4]];
     [col_10_x, row_1_col_10, row_2_col_10, row_3_col_10, row_4_col_10, row_5_col_10] = compile_coordinates(10, col_10_row_args);
-    let maine_data = filter_state("Maine", year_dataset);
-    let massachusets_data = filter_state("Massachusetts", year_dataset);
-    let rhode_island_data = filter_state("Rhode Island", year_dataset);
-    let connecticut_data = filter_state("Connecticut", year_dataset);
-    let delaware_data = filter_state("Delaware", year_dataset);
-    const maine_label = state_labels_house("Maine", col_10_x, row_1_col_10);
-    const massachusets_label = state_labels_house("Massachusetts", col_10_x, row_2_col_10);
-    const rhode_island_label = state_labels_house("Rhode Island", col_10_x, row_3_col_10);
-    const connecticut_label = state_labels_house("Connecticut", col_10_x, row_4_col_10);
-    const delaware_label = state_labels_house("Delaware", col_10_x, row_5_col_10);
-    let maine = construct_seats(2, 4, col_10_x, row_1_col_10, maine_data, "ME");
-    let massachusets = construct_seats(9, 4, col_10_x, row_2_col_10, massachusets_data, "MA");
-    let rhode_island = construct_seats(2, 4, col_10_x, row_3_col_10, rhode_island_data, "RI");
-    let connecticut = construct_seats(5, 4, col_10_x, row_4_col_10, connecticut_data, "CT");
-    let delaware = construct_seats(1, 4, col_10_x, row_5_col_10, delaware_data, "DE");
+    [maine_data, maine_label, maine] = compile_state_house("Maine", year_dataset, col_10_x, row_1_col_10, 2, 4, "ME");
+    [massachusets_data, massachusets_label, massachusets] = compile_state_house("Massachusetts", year_dataset, col_10_x, row_2_col_10, 9, 4, "MA");
+    [rhode_island_data, rhode_island_label, rhode_island] = compile_state_house("Rhode Island", year_dataset, col_10_x, row_3_col_10, 2, 4, "RI");
+    [connecticut_data, connecticut_label, connecticut] = compile_state_house("Connecticut", year_dataset, col_10_x, row_4_col_10, 5, 4, "CT");
+    [delaware_data, delaware_label, delaware] = compile_state_house("Delaware", year_dataset, col_10_x, row_5_col_10, 1, 4, "DE");
 
 }
 
