@@ -1209,12 +1209,8 @@ function display_house_seats(year_dataset) {
     [new_jersey_data, new_jersey_label, new_jersey] = compile_state_house("New Jersey", year_dataset, col_9_x, row_4_col_9, 12, 4, "NJ");
     [maryland_data, maryland_label, maryland] = compile_state_house("Maryland", year_dataset, col_9_x, row_5_col_9, 8, 4, "MD");
     
-    const col_10_x = col_x_build(10);
-    const row_1_col_10 = row_y_build(1, 0);
-    const row_2_col_10 = row_y_build(2, 1, 1);
-    const row_3_col_10 = row_y_build(3, 4, 2);
-    const row_4_col_10 = row_y_build(4, 5, 3);
-    const row_5_col_10 = row_y_build(5, 7, 4);
+    const col_10_row_args = [[1, 0], [2, 1, 1], [3, 4, 2], [4, 5, 3], [5, 7, 4]];
+    [col_10_x, row_1_col_10, row_2_col_10, row_3_col_10, row_4_col_10, row_5_col_10] = compile_coordinates(10, col_10_row_args);
     let maine_data = filter_state("Maine", year_dataset);
     let massachusets_data = filter_state("Massachusetts", year_dataset);
     let rhode_island_data = filter_state("Rhode Island", year_dataset);
