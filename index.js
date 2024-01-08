@@ -1090,6 +1090,20 @@ function row_y_build(row, y_seat_rows, number_states_y = 1) {
 
 }
 
+function state_labels_house(state, x, y) {
+    //writes the state name for all states
+
+    let fx = xg + x;
+    let fy = yg + y - 5;
+
+    svg.append("text")
+        .attr("x", fx)
+        .attr("y", fy)
+        .attr("class", "HouseStateLabels")
+        .text(state);
+
+}
+
 function compile_state_house(state_name, year_dataset, dx, dy, seat_num, cols, state_ini) {
     let data = filter_state(state_name, year_dataset);
     const state_label = state_labels_house(state_name, dx, dy);
@@ -1216,20 +1230,6 @@ function display_house_seats(year_dataset) {
     [rhode_island_data, rhode_island_label, rhode_island] = compile_state_house("Rhode Island", year_dataset, col_10_x, row_3_col_10, 2, 4, "RI");
     [connecticut_data, connecticut_label, connecticut] = compile_state_house("Connecticut", year_dataset, col_10_x, row_4_col_10, 5, 4, "CT");
     [delaware_data, delaware_label, delaware] = compile_state_house("Delaware", year_dataset, col_10_x, row_5_col_10, 1, 4, "DE");
-
-}
-
-function state_labels_house(state, x, y) {
-    //writes the state name for all states
-
-    let fx = xg + x;
-    let fy = yg + y - 5;
-
-    svg.append("text")
-        .attr("x", fx)
-        .attr("y", fy)
-        .attr("class", "HouseStateLabels")
-        .text(state);
 
 }
 
