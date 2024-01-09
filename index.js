@@ -1119,6 +1119,13 @@ function compile_state_house(state_name, year_dataset, dx, dy, seat_num, cols, s
 }
 
 function compile_coordinates(col, rows_args) {
+    /*
+    gets the column number
+    gets the row arguments: list of list containing the 
+                            inputs(row, y_seat_rows, number_states_y) for calculating dy
+    creates a list of output coordinates conatining the dx & dy for all the inputs
+    returns the coordinate list
+    */
 
     const col_x = col_x_build(col);
     let out_list = [col_x];
