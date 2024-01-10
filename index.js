@@ -1104,20 +1104,6 @@ function state_labels_house(state, x, y) {
 
 }
 
-function compile_state_house(state_name, year_dataset, dx, dy, seat_num, cols, state_ini) {
-    /*
-    gets the state name, dataset, corordinates, seats, cols, & initials
-    filters data to state data
-    draws state label
-    constructs seats for the state
-    returns the data, label & seats as a list
-    */
-    let data = filter_state(state_name, year_dataset);
-    const state_label = state_labels_house(state_name, dx, dy);
-    let state = construct_seats(seat_num, cols, dx, dy, data, state_ini);
-    return [data, state_label, state]
-}
-
 function compile_coordinates(col, rows_args) {
     /*
     gets the column number
@@ -1154,6 +1140,20 @@ function compile_coordinates(col, rows_args) {
     // console.log(out_list);
     return out_list;
 
+}
+
+function compile_state_house(state_name, year_dataset, dx, dy, seat_num, cols, state_ini) {
+    /*
+    gets the state name, dataset, corordinates, seats, cols, & initials
+    filters data to state data
+    draws state label
+    constructs seats for the state
+    returns the data, label & seats as a list
+    */
+    let data = filter_state(state_name, year_dataset);
+    const state_label = state_labels_house(state_name, dx, dy);
+    let state = construct_seats(seat_num, cols, dx, dy, data, state_ini);
+    return [data, state_label, state]
 }
 
 function display_house_seats(year_dataset) {
