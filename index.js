@@ -1527,6 +1527,44 @@ function state_labels_senate(state, x, y) {
 
 }
 
+function compile_coordinates_senate(col, rows_args) {
+    /*
+    gets the column number
+    gets the row arguments: list of list containing the 
+                            inputs(row, y_seat_rows, number_states_y) for calculating dy
+    creates a list of output coordinates conatining the dx & dy for all the inputs
+    returns the coordinate list
+    */
+
+    const col_x = col_x_build_senate(col);
+    let out_list = [col_x];
+
+    for (let i = 0; i < rows_args.length; i++) {
+
+        let arg = rows_args[i];
+
+        // log(arg.length);
+
+        if (arg.length == 2) {
+            let row = arg[0];
+            let y_seat_rows = arg[1];
+            let dy = row_y_build_senate(row, y_seat_rows);
+            out_list.push(dy);
+        }
+
+        if (arg.length == 3) {
+            let row = arg[0];
+            let y_seat_rows = arg[1];
+            let number_states_y = arg[2];
+            let dy = row_y_build_senate(row, y_seat_rows, number_states_y);
+            out_list.push(dy);
+        }
+    }
+    // console.log(out_list);
+    return out_list;
+
+}
+
 function display_senate_seats(year_dataset) {
     //draws the senate chamber with all its seats
 
