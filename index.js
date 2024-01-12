@@ -1565,7 +1565,7 @@ function compile_coordinates_senate(col, rows_args) {
 
 }
 
-function compile_state_senate(state_name, year_dataset, dx, dy, seat_num, cols, state_ini) {
+function compile_state_senate(state_name, year_dataset, dx, dy, cols, state_ini) {
     /*
     gets the state name, dataset, corordinates, seats, cols, & initials
     filters data to state data
@@ -1574,8 +1574,8 @@ function compile_state_senate(state_name, year_dataset, dx, dy, seat_num, cols, 
     returns the data, label & seats as a list
     */
     let data = filter_state(state_name, year_dataset);
-    const state_label = state_labels_house(state_name, dx, dy);
-    let state = construct_seats(seat_num, cols, dx, dy, data, state_ini);
+    const state_label = state_labels_senate(state_name, dx, dy);
+    let state = construct_senate_seats(cols, dx, dy, data, state_ini);
     return [data, state_label, state]
 }
 
