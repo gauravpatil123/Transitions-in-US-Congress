@@ -1584,12 +1584,6 @@ function display_senate_seats(year_dataset) {
 
     const col_1_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 3, 3], [5, 4, 4]];
     [col_1_x, row_1_col_1, row_2_col_1, row_3_col_1, row_4_col_1, row_5_col_1] = compile_coordinates_senate(1, col_1_row_args);
-    // const col_1_x = col_x_build_senate(1);
-    // const row_1_col_1 = row_y_build_senate(1, 0);
-    // const row_2_col_1 = row_y_build_senate(2, 1, 1);
-    // const row_3_col_1 = row_y_build_senate(3, 2, 2);
-    // const row_4_col_1 = row_y_build_senate(4, 3, 3);
-    // const row_5_col_1 = row_y_build_senate(5, 4, 4);
     let washington_data = filter_state("Washington", year_dataset);
     let oregon_data = filter_state("Oregon", year_dataset);
     let california_data = filter_state("California", year_dataset);
