@@ -1585,21 +1585,10 @@ function display_senate_seats(year_dataset) {
     const col_1_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 3, 3], [5, 4, 4]];
     [col_1_x, row_1_col_1, row_2_col_1, row_3_col_1, row_4_col_1, row_5_col_1] = compile_coordinates_senate(1, col_1_row_args);
     [washington_data, washington_label, washington] = compile_state_senate("Washington", year_dataset, col_1_x, row_1_col_1, 2, "WA");
-    // let washington_data = filter_state("Washington", year_dataset);
-    let oregon_data = filter_state("Oregon", year_dataset);
-    let california_data = filter_state("California", year_dataset);
-    let nevada_data = filter_state("Nevada", year_dataset);
-    let arizona_data = filter_state("Arizona", year_dataset);
-    // const washington_label = state_labels_senate("Washington", col_1_x, row_1_col_1);
-    const oregon_label = state_labels_senate("Oregon", col_1_x, row_2_col_1);
-    const nevada_label = state_labels_senate("Nevada", col_1_x, row_3_col_1);
-    const arizona_label = state_labels_senate("Arizona", col_1_x, row_4_col_1);
-    const california_label = state_labels_senate("California", col_1_x, row_5_col_1);
-    // let washington = construct_senate_seats(2, col_1_x, row_1_col_1, washington_data, "WA");
-    let oregon = construct_senate_seats(2, col_1_x, row_2_col_1, oregon_data, "OR");
-    let nevada = construct_senate_seats(2, col_1_x, row_3_col_1, nevada_data, "NV");
-    let arizona = construct_senate_seats(2, col_1_x, row_4_col_1, arizona_data, "AZ");
-    let california = construct_senate_seats(2, col_1_x, row_5_col_1, california_data, "CA");
+    [oregon_data, oregon_label, oregon] = compile_state_senate("Oregon", year_dataset, col_1_x, row_2_col_1, 2, "OR");
+    [nevada_data, nevada_label, nevada] = compile_state_senate("Nevada", year_dataset, col_1_x, row_3_col_1, 2, "NV");
+    [arizona_data, arizona_label, arizona] = compile_state_senate("Arizona", year_dataset, col_1_x, row_4_col_1, 2, "AZ");
+    [california_data, california_label, california] = compile_state_senate("California", year_dataset, col_1_x, row_5_col_1, 2, "CA");
 
     const col_2_x = col_x_build_senate(2);
     const row_1_col_2 = row_y_build_senate(1, 0);
