@@ -1592,21 +1592,11 @@ function display_senate_seats(year_dataset) {
     [california_data, california_label, california] = compile_state_senate("California", year_dataset, col_1_x, row_5_col_1, 2, "CA");
 
     [col_2_x, row_1_col_2, row_2_col_2, row_3_col_2, row_4_col_2, row_5_col_2] = compile_coordinates_senate(2, col_row_args);
-    let idaho_data = filter_state("Idaho", year_dataset);
-    let utah_data = filter_state("Utah", year_dataset);
-    let colorado_data = filter_state("Colorado", year_dataset);
-    let new_mexico_data = filter_state("New Mexico", year_dataset);
-    let alaska_data = filter_state("Alaska", year_dataset);
-    const idaho_label = state_labels_senate("Idaho", col_2_x, row_1_col_2);
-    const utah_label = state_labels_senate("Utah", col_2_x, row_2_col_2);
-    const colorado_label = state_labels_senate("Colorado", col_2_x, row_3_col_2);
-    const new_mexico_label = state_labels_senate("New Mexico", col_2_x, row_4_col_2);
-    const alaska_label = state_labels_senate("Alaska", col_2_x, row_5_col_2);
-    let idaho = construct_senate_seats(2, col_2_x, row_1_col_2, idaho_data, "ID");
-    let utah = construct_senate_seats(2, col_2_x, row_2_col_2, utah_data, "UT");
-    let colorado = construct_senate_seats(2, col_2_x, row_3_col_2, colorado_data, "CO");
-    let new_mexico = construct_senate_seats(2, col_2_x, row_4_col_2, new_mexico_data, "NM");
-    let alaska = construct_senate_seats(2, col_2_x, row_5_col_2, alaska_data, "AK");
+    [idaho_data, idaho_label, idaho] = compile_state_senate("Idaho", year_dataset, col_2_x, row_1_col_2, 2, "ID");
+    [utah_data, utah_label, utah] = compile_state_senate("Utah", year_dataset, col_2_x, row_2_col_2, 2, "UT");
+    [colorado_data, colorado_label, colorado] = compile_state_senate("Colorado", year_dataset, col_2_x, row_3_col_2, 2, "CO");
+    [new_mexico_data, new_mexico_label, new_mexico] = compile_state_senate("New Mexico", year_dataset, col_2_x, row_4_col_2, 2, "NM");
+    [alaska_data, alaska_label, alaska] = compile_state_senate("Alaska", year_dataset, col_2_x, row_5_col_2, 2, "AK");
 
     const col_3_x = col_x_build_senate(3);
     const row_1_col_3 = row_y_build_senate(1, 0);
