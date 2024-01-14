@@ -1582,20 +1582,16 @@ function compile_state_senate(state_name, year_dataset, dx, dy, cols, state_ini)
 function display_senate_seats(year_dataset) {
     //draws the senate chamber with all its seats
 
-    const col_1_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 3, 3], [5, 4, 4]];
-    [col_1_x, row_1_col_1, row_2_col_1, row_3_col_1, row_4_col_1, row_5_col_1] = compile_coordinates_senate(1, col_1_row_args);
+    const col_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 3, 3], [5, 4, 4]];
+    
+    [col_1_x, row_1_col_1, row_2_col_1, row_3_col_1, row_4_col_1, row_5_col_1] = compile_coordinates_senate(1, col_row_args);
     [washington_data, washington_label, washington] = compile_state_senate("Washington", year_dataset, col_1_x, row_1_col_1, 2, "WA");
     [oregon_data, oregon_label, oregon] = compile_state_senate("Oregon", year_dataset, col_1_x, row_2_col_1, 2, "OR");
     [nevada_data, nevada_label, nevada] = compile_state_senate("Nevada", year_dataset, col_1_x, row_3_col_1, 2, "NV");
     [arizona_data, arizona_label, arizona] = compile_state_senate("Arizona", year_dataset, col_1_x, row_4_col_1, 2, "AZ");
     [california_data, california_label, california] = compile_state_senate("California", year_dataset, col_1_x, row_5_col_1, 2, "CA");
 
-    const col_2_x = col_x_build_senate(2);
-    const row_1_col_2 = row_y_build_senate(1, 0);
-    const row_2_col_2 = row_y_build_senate(2, 1, 1);
-    const row_3_col_2 = row_y_build_senate(3, 2, 2);
-    const row_4_col_2 = row_y_build_senate(4, 3, 3);
-    const row_5_col_2 = row_y_build_senate(5, 4, 4);
+    [col_2_x, row_1_col_2, row_2_col_2, row_3_col_2, row_4_col_2, row_5_col_2] = compile_coordinates_senate(2, col_row_args);
     let idaho_data = filter_state("Idaho", year_dataset);
     let utah_data = filter_state("Utah", year_dataset);
     let colorado_data = filter_state("Colorado", year_dataset);
