@@ -1599,21 +1599,11 @@ function display_senate_seats(year_dataset) {
     [alaska_data, alaska_label, alaska] = compile_state_senate("Alaska", year_dataset, col_2_x, row_5_col_2, 2, "AK");
 
     [col_3_x, row_1_col_3, row_2_col_3, row_3_col_3, row_4_col_3, row_5_col_3] = compile_coordinates_senate(3, col_row_args);
-    let montana_data = filter_state("Montana", year_dataset);
-    let wyoming_data = filter_state("Wyoming", year_dataset);
-    let nebraska_data = filter_state("Nebraska", year_dataset);
-    let kansas_data = filter_state("Kansas", year_dataset);
-    let hawaii_data = filter_state("Hawaii", year_dataset);
-    const montana_label = state_labels_senate("Montana", col_3_x, row_1_col_3);
-    const wyoming_label = state_labels_senate("Wyoming", col_3_x, row_2_col_3);
-    const nebraska_label = state_labels_senate("Nebraska", col_3_x, row_3_col_3);
-    const kansas_label = state_labels_senate("Kansas", col_3_x, row_4_col_3);
-    const hawaii_label = state_labels_senate("Hawaii", col_3_x, row_5_col_3);
-    let montana = construct_senate_seats(2, col_3_x, row_1_col_3, montana_data, "MT");
-    let wyoming = construct_senate_seats(2, col_3_x, row_2_col_3, wyoming_data, "WY");
-    let nebraska = construct_senate_seats(2, col_3_x, row_3_col_3, nebraska_data, "NE");
-    let kansas = construct_senate_seats(2, col_3_x, row_4_col_3, kansas_data, "KS");
-    let hawaii = construct_senate_seats(2, col_3_x, row_5_col_3, hawaii_data, "HI");
+    [montana_data, montana_label, montana] = compile_state_senate("Montana", year_dataset, col_3_x, row_1_col_3, 2, "MT");
+    [wyoming_data, wyoming_label, wyoming] = compile_state_senate("Wyoming", year_dataset, col_3_x, row_2_col_3, 2, "WY");
+    [nebraska_data, nebraska_label, nebraska] = compile_state_senate("Nebraska", year_dataset, col_3_x, row_3_col_3, 2, "NE");
+    [kansas_data, kansas_label, kansas] = compile_state_senate("Kansas", year_dataset, col_3_x, row_4_col_3, 2, "KS");
+    [hawaii_data, hawaii_label, hawaii] = compile_state_senate("Hawaii", year_dataset, col_3_x, row_5_col_3, 2, "HI");
 
     const col_4_x = col_x_build_senate(4);
     const row_1_col_4 = row_y_build_senate(1, 0);
