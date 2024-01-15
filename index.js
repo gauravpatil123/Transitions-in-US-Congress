@@ -1598,12 +1598,7 @@ function display_senate_seats(year_dataset) {
     [new_mexico_data, new_mexico_label, new_mexico] = compile_state_senate("New Mexico", year_dataset, col_2_x, row_4_col_2, 2, "NM");
     [alaska_data, alaska_label, alaska] = compile_state_senate("Alaska", year_dataset, col_2_x, row_5_col_2, 2, "AK");
 
-    const col_3_x = col_x_build_senate(3);
-    const row_1_col_3 = row_y_build_senate(1, 0);
-    const row_2_col_3 = row_y_build_senate(2, 1, 1);
-    const row_3_col_3 = row_y_build_senate(3, 2, 2);
-    const row_4_col_3 = row_y_build_senate(4, 3, 3);
-    const row_5_col_3 = row_y_build_senate(5, 4, 4);
+    [col_3_x, row_1_col_3, row_2_col_3, row_3_col_3, row_4_col_3, row_5_col_3] = compile_coordinates_senate(3, col_row_args);
     let montana_data = filter_state("Montana", year_dataset);
     let wyoming_data = filter_state("Wyoming", year_dataset);
     let nebraska_data = filter_state("Nebraska", year_dataset);
