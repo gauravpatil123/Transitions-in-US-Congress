@@ -1606,21 +1606,11 @@ function display_senate_seats(year_dataset) {
     [hawaii_data, hawaii_label, hawaii] = compile_state_senate("Hawaii", year_dataset, col_3_x, row_5_col_3, 2, "HI");
 
     [col_4_x, row_1_col_4, row_2_col_4, row_3_col_4, row_4_col_4, row_5_col_4] = compile_coordinates_senate(4, col_row_args);
-    let north_dacota_data = filter_state("North Dakota", year_dataset);
-    let south_dacota_data = filter_state("South Dakota", year_dataset);
-    let missouri_data = filter_state("Missouri", year_dataset);
-    let arkansas_data = filter_state("Arkansas", year_dataset);
-    let texas_data = filter_state("Texas", year_dataset);
-    const north_dacota_label = state_labels_senate("North Dakota", col_4_x, row_1_col_4);
-    const south_dacota_label = state_labels_senate("South Dakota", col_4_x, row_2_col_4);
-    const missouri_label = state_labels_senate("Missouri", col_4_x, row_3_col_4);
-    const arkansas_label = state_labels_senate("Arkansas", col_4_x, row_4_col_4);
-    const texas_label = state_labels_senate("Texas", col_4_x, row_5_col_4);
-    let north_dacota = construct_senate_seats(2, col_4_x, row_1_col_4, north_dacota_data, "ND");
-    let south_dacota = construct_senate_seats(2, col_4_x, row_2_col_4, south_dacota_data, "SD");
-    let missouri = construct_senate_seats(2, col_4_x, row_3_col_4, missouri_data, "MO");
-    let arkansas = construct_senate_seats(2, col_4_x, row_4_col_4, arkansas_data, "AR");
-    let texas = construct_senate_seats(2, col_4_x, row_5_col_4, texas_data, "TX");
+    [north_dacota_data, north_dacota_label, north_dacota] = compile_state_senate("North Dakota", year_dataset, col_4_x, row_1_col_4, 2, "ND");
+    [south_dacota_data, south_dacota_label, south_dacota] = compile_state_senate("South Dakota", year_dataset, col_4_x, row_2_col_4, 2, "SD");
+    [missouri_data, missouri_label, missouri] = compile_state_senate("Missouri", year_dataset, col_4_x, row_3_col_4, 2, "MO");
+    [arkansas_data, arkansas_label, arkansas] = compile_state_senate("Arkansas", year_dataset, col_4_x, row_4_col_4, 2, "AR");
+    [texas_data, texas_label, texas] = compile_state_senate("Texas", year_dataset, col_4_x, row_5_col_4, 2, "TX");
 
     const col_5_x = col_x_build_senate(5);
     const row_1_col_5 = row_y_build_senate(1, 0);
