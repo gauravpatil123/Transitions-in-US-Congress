@@ -1613,21 +1613,11 @@ function display_senate_seats(year_dataset) {
     [texas_data, texas_label, texas] = compile_state_senate("Texas", year_dataset, col_4_x, row_5_col_4, 2, "TX");
 
     [col_5_x, row_1_col_5, row_2_col_5, row_3_col_5, row_4_col_5, row_5_col_5] = compile_coordinates_senate(5, col_row_args);
-    let minnesota_data = filter_state("Minnesota", year_dataset);
-    let iowa_data = filter_state("Iowa", year_dataset);
-    let kentucky_data = filter_state("Kentucky", year_dataset);
-    let mississippi_data = filter_state("Mississippi", year_dataset);
-    let oklahoma_data = filter_state("Oklahoma", year_dataset);
-    const minnesota_label = state_labels_senate("Minnesota", col_5_x, row_1_col_5);
-    const iowa_label = state_labels_senate("Iowa", col_5_x, row_2_col_5);
-    const kentucky_label = state_labels_senate("Kentucky", col_5_x, row_3_col_5);
-    const mississippi_label = state_labels_senate("Mississippi", col_5_x, row_4_col_5);
-    const oklahoma_label = state_labels_senate("Oklahoma", col_5_x, row_5_col_5);
-    let minnesota = construct_senate_seats(2, col_5_x, row_1_col_5, minnesota_data, "MN");
-    let iowa = construct_senate_seats(2, col_5_x, row_2_col_5, iowa_data, "IA");
-    let kentucky = construct_senate_seats(2, col_5_x, row_3_col_5, kentucky_data, "KY");
-    let mississippi = construct_senate_seats(2, col_5_x, row_4_col_5, mississippi_data, "MS");
-    let oklahoma = construct_senate_seats(2, col_5_x, row_5_col_5, oklahoma_data, "OK");
+    [minnesota_data, minnesota_label, minnesota] = compile_state_senate("Minnesota", year_dataset, col_5_x, row_1_col_5, 2, "MN");
+    [iowa_data, iowa_label, iowa] = compile_state_senate("Iowa", year_dataset, col_5_x, row_2_col_5, 2, "IA");
+    [kentucky_data, kentucky_label, kentucky] = compile_state_senate("Kentucky", year_dataset, col_5_x, row_3_col_5, 2, "KY");
+    [mississippi_data, mississippi_label, mississippi] = compile_state_senate("Mississippi", year_dataset, col_5_x, row_4_col_5, 2, "MS");
+    [oklahoma_data, oklahoma_label, oklahoma] = compile_state_senate("Oklahoma", year_dataset, col_5_x, row_5_col_5, 2, "OK");
 
     const col_6_x = col_x_build_senate(6);
     const row_1_col_6 = row_y_build_senate(1, 0);
