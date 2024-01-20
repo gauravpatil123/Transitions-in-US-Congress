@@ -1627,21 +1627,11 @@ function display_senate_seats(year_dataset) {
     [louisiana_data, louisiana_label, louisiana] = compile_state_senate("Louisiana", year_dataset, col_6_x, row_5_col_6, 2, "LA");
 
     [col_7_x, row_1_col_7, row_2_col_7, row_3_col_7, row_4_col_7, row_5_col_7] = compile_coordinates_senate(7, col_row_args);
-    let michigan_data = filter_state("Michigan", year_dataset);
-    let indiana_data = filter_state("Indiana", year_dataset);
-    let south_carolina_data = filter_state("South Carolina", year_dataset);
-    let georgia_data = filter_state("Georgia", year_dataset);
-    let florida_data = filter_state("Florida", year_dataset);
-    const michigan_label = state_labels_senate("Michigan", col_7_x, row_1_col_7);
-    const indiana_label = state_labels_senate("Indiana", col_7_x, row_2_col_7);
-    const south_carolina_label = state_labels_senate("South Carolina", col_7_x, row_3_col_7);
-    const georgia_label = state_labels_senate("Georgia", col_7_x, row_4_col_7);
-    const florida_label = state_labels_senate("Florida", col_7_x, row_5_col_7);
-    let michigan = construct_senate_seats(2, col_7_x, row_1_col_7, michigan_data, "MI");
-    let indiana = construct_senate_seats(2, col_7_x, row_2_col_7, indiana_data, "IN");
-    let south_carolina = construct_senate_seats(2, col_7_x, row_3_col_7, south_carolina_data, "SC");
-    let georgia = construct_senate_seats(2, col_7_x, row_4_col_7, georgia_data, "GA");
-    let florida = construct_senate_seats(2, col_7_x, row_5_col_7, florida_data, "FL");
+    [michigan_data, michigan_label, michigan] = compile_state_senate("Michigan", year_dataset, col_7_x, row_1_col_7, 2, "MI");
+    [indiana_data, indiana_label, indiana] = compile_state_senate("Indiana", year_dataset, col_7_x, row_2_col_7, 2, "IN");
+    [south_carolina_data, south_carolina_label, south_carolina] = compile_state_senate("South Carolina", year_dataset, col_7_x, row_3_col_7, 2, "SC");
+    [georgia_data, georgia_label, georgia] = compile_state_senate("Georgia", year_dataset, col_7_x, row_4_col_7, 2, "GA");
+    [florida_data, florida_label, florida] = compile_state_senate("Florida", year_dataset, col_7_x, row_5_col_7, 2, "FL");
 
     const col_8_x = col_x_build_senate(8);
     const row_1_col_8 = row_y_build_senate(1, 0);
