@@ -1626,12 +1626,7 @@ function display_senate_seats(year_dataset) {
     [alabama_data, alabama_label, alabama] = compile_state_senate("Alabama", year_dataset, col_6_x, row_4_col_6, 2, "AL");
     [louisiana_data, louisiana_label, louisiana] = compile_state_senate("Louisiana", year_dataset, col_6_x, row_5_col_6, 2, "LA");
 
-    const col_7_x = col_x_build_senate(7);
-    const row_1_col_7 = row_y_build_senate(1, 0);
-    const row_2_col_7 = row_y_build_senate(2, 1, 1);
-    const row_3_col_7 = row_y_build_senate(3, 2, 2);
-    const row_4_col_7 = row_y_build_senate(4, 3, 3);
-    const row_5_col_7 = row_y_build_senate(5, 4, 4);
+    [col_7_x, row_1_col_7, row_2_col_7, row_3_col_7, row_4_col_7, row_5_col_7] = compile_coordinates_senate(7, col_row_args);
     let michigan_data = filter_state("Michigan", year_dataset);
     let indiana_data = filter_state("Indiana", year_dataset);
     let south_carolina_data = filter_state("South Carolina", year_dataset);
