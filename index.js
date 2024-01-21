@@ -1633,12 +1633,7 @@ function display_senate_seats(year_dataset) {
     [georgia_data, georgia_label, georgia] = compile_state_senate("Georgia", year_dataset, col_7_x, row_4_col_7, 2, "GA");
     [florida_data, florida_label, florida] = compile_state_senate("Florida", year_dataset, col_7_x, row_5_col_7, 2, "FL");
 
-    const col_8_x = col_x_build_senate(8);
-    const row_1_col_8 = row_y_build_senate(1, 0);
-    const row_2_col_8 = row_y_build_senate(2, 1, 1);
-    const row_3_col_8 = row_y_build_senate(3, 2, 2);
-    const row_4_col_8 = row_y_build_senate(4, 3, 3);
-    const row_5_col_8 = row_y_build_senate(5, 4, 4);
+    [col_8_x, row_1_col_8, row_2_col_8, row_3_col_8, row_4_col_8, row_5_col_8] = compile_coordinates_senate(8, col_row_args);
     let ohio_data = filter_state("Ohio", year_dataset);
     let north_carolina_data = filter_state("North Carolina", year_dataset);
     let west_virginia_data = filter_state("West Virginia", year_dataset);
