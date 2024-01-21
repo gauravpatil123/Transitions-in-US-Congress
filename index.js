@@ -1634,21 +1634,11 @@ function display_senate_seats(year_dataset) {
     [florida_data, florida_label, florida] = compile_state_senate("Florida", year_dataset, col_7_x, row_5_col_7, 2, "FL");
 
     [col_8_x, row_1_col_8, row_2_col_8, row_3_col_8, row_4_col_8, row_5_col_8] = compile_coordinates_senate(8, col_row_args);
-    let ohio_data = filter_state("Ohio", year_dataset);
-    let north_carolina_data = filter_state("North Carolina", year_dataset);
-    let west_virginia_data = filter_state("West Virginia", year_dataset);
-    let virginia_data = filter_state("Virginia", year_dataset);
-    let maryland_data = filter_state("Maryland", year_dataset);
-    const ohio_label = state_labels_senate("Ohio", col_8_x, row_1_col_8);
-    const north_carolina_label = state_labels_senate("North Carolina", col_8_x, row_2_col_8);
-    const west_virginia_label = state_labels_senate("West Virginia", col_8_x, row_3_col_8);
-    const virginia_label = state_labels_senate("Virginia", col_8_x, row_4_col_8);
-    const maryland_label = state_labels_senate("Maryland", col_8_x, row_5_col_8);
-    let ohio = construct_senate_seats(2, col_8_x, row_1_col_8, ohio_data, "OH");
-    let north_carolina = construct_senate_seats(2, col_8_x, row_2_col_8, north_carolina_data, "NC");
-    let west_virginia = construct_senate_seats(2, col_8_x, row_3_col_8, west_virginia_data, "WV");
-    let virginia = construct_senate_seats(2, col_8_x, row_4_col_8, virginia_data, "VA");
-    let maryland = construct_senate_seats(2, col_8_x, row_5_col_8, maryland_data, "MD");
+    [ohio_data, ohio_label, ohio] = compile_state_senate("Ohio", year_dataset, col_8_x, row_1_col_8, 2, "OH");
+    [north_carolina_data, north_carolina_label, north_carolina] = compile_state_senate("North Carolina", year_dataset, col_8_x, row_2_col_8, 2, "NC");
+    [west_virginia_data, west_virginia_label, west_virginia] = compile_state_senate("West Virginia", year_dataset, col_8_x, row_3_col_8, 2, "WV");
+    [virginia_data, virginia_label, virginia] = compile_state_senate("Virginia", year_dataset, col_8_x, row_4_col_8, 2, "VA");
+    [maryland_data, maryland_label, maryland] = compile_state_senate("Maryland", year_dataset, col_8_x, row_5_col_8, 2, "MD");
 
     const col_9_x = col_x_build_senate(9);
     const row_1_col_9 = row_y_build_senate(1, 0);
