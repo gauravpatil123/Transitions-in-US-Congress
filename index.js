@@ -1641,21 +1641,11 @@ function display_senate_seats(year_dataset) {
     [maryland_data, maryland_label, maryland] = compile_state_senate("Maryland", year_dataset, col_8_x, row_5_col_8, 2, "MD");
 
     [col_9_x, row_1_col_9, row_2_col_9, row_3_col_9, row_4_col_9, row_5_col_9] = compile_coordinates_senate(9, col_row_args);
-    let vermont_data = filter_state("Vermont", year_dataset);
-    let new_hampshire_data = filter_state("New Hampshire", year_dataset);
-    let pennsylvania_data = filter_state("Pennsylvania", year_dataset);
-    let new_jersey_data = filter_state("New Jersey", year_dataset);
-    let delaware_data = filter_state("Delaware", year_dataset);
-    const vermont_label = state_labels_senate("Vermont", col_9_x, row_1_col_9);
-    const new_hampshire_label = state_labels_senate("New Hampshire", col_9_x, row_2_col_9);
-    const pennsylvania_label = state_labels_senate("Pennsylvania", col_9_x, row_3_col_9);
-    const new_jersey_label = state_labels_senate("New Jersey", col_9_x, row_4_col_9);
-    const delaware_label = state_labels_senate("Delaware", col_9_x, row_5_col_9);
-    let vermont = construct_senate_seats(2, col_9_x, row_1_col_9, vermont_data, "VT");
-    let new_hampshire = construct_senate_seats(2, col_9_x, row_2_col_9, new_hampshire_data, "NH");
-    let pennsylvania = construct_senate_seats(2, col_9_x, row_3_col_9, pennsylvania_data, "PA");
-    let new_jersey = construct_senate_seats(2, col_9_x, row_4_col_9,new_jersey_data, "NJ");
-    let delaware = construct_senate_seats(2, col_9_x, row_5_col_9, delaware_data, "DE");
+    [vermont_data, vermont_label, vermont] = compile_state_senate("Vermont", year_dataset, col_9_x, row_1_col_9, 2, "VT");
+    [new_hampshire_data, new_hampshire_label, new_hampshire] = compile_state_senate("New Hampshire", year_dataset, col_9_x, row_2_col_9, 2, "NH");
+    [pennsylvania_data, pennsylvania_label, pennsylvania] = compile_state_senate("Pennsylvania", year_dataset, col_9_x, row_3_col_9, 2, "PA");
+    [new_jersey_data, new_jersey_label, new_jersey] = compile_state_senate("New Jersey", year_dataset, col_9_x, row_4_col_9, 2, "NJ");
+    [delaware_data, delaware_label, delaware] = compile_state_senate("Delaware", year_dataset, col_9_x, row_5_col_9, 2, "DE");
 
     const col_10_x = col_x_build_senate(10);
     const row_1_col_10 = row_y_build_senate(1, 0);
