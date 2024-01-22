@@ -1640,12 +1640,7 @@ function display_senate_seats(year_dataset) {
     [virginia_data, virginia_label, virginia] = compile_state_senate("Virginia", year_dataset, col_8_x, row_4_col_8, 2, "VA");
     [maryland_data, maryland_label, maryland] = compile_state_senate("Maryland", year_dataset, col_8_x, row_5_col_8, 2, "MD");
 
-    const col_9_x = col_x_build_senate(9);
-    const row_1_col_9 = row_y_build_senate(1, 0);
-    const row_2_col_9 = row_y_build_senate(2, 1, 1);
-    const row_3_col_9 = row_y_build_senate(3, 2, 2);
-    const row_4_col_9 = row_y_build_senate(4, 3, 3);
-    const row_5_col_9 = row_y_build_senate(5, 4, 4);
+    [col_9_x, row_1_col_9, row_2_col_9, row_3_col_9, row_4_col_9, row_5_col_9] = compile_coordinates_senate(9, col_row_args);
     let vermont_data = filter_state("Vermont", year_dataset);
     let new_hampshire_data = filter_state("New Hampshire", year_dataset);
     let pennsylvania_data = filter_state("Pennsylvania", year_dataset);
