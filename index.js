@@ -1647,12 +1647,7 @@ function display_senate_seats(year_dataset) {
     [new_jersey_data, new_jersey_label, new_jersey] = compile_state_senate("New Jersey", year_dataset, col_9_x, row_4_col_9, 2, "NJ");
     [delaware_data, delaware_label, delaware] = compile_state_senate("Delaware", year_dataset, col_9_x, row_5_col_9, 2, "DE");
 
-    const col_10_x = col_x_build_senate(10);
-    const row_1_col_10 = row_y_build_senate(1, 0);
-    const row_2_col_10 = row_y_build_senate(2, 1, 1);
-    const row_3_col_10 = row_y_build_senate(3, 2, 2);
-    const row_4_col_10 = row_y_build_senate(4, 3, 3);
-    const row_5_col_10 = row_y_build_senate(5, 4, 4);
+    [col_10_x, row_1_col_10, row_2_col_10, row_3_col_10, row_4_col_10, row_5_col_10] = compile_coordinates_senate(10, col_row_args);
     let maine_data = filter_state("Maine", year_dataset);
     let massachusets_data = filter_state("Massachusetts", year_dataset);
     let rhode_island_data = filter_state("Rhode Island", year_dataset);
