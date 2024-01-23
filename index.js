@@ -1648,21 +1648,11 @@ function display_senate_seats(year_dataset) {
     [delaware_data, delaware_label, delaware] = compile_state_senate("Delaware", year_dataset, col_9_x, row_5_col_9, 2, "DE");
 
     [col_10_x, row_1_col_10, row_2_col_10, row_3_col_10, row_4_col_10, row_5_col_10] = compile_coordinates_senate(10, col_row_args);
-    let maine_data = filter_state("Maine", year_dataset);
-    let massachusets_data = filter_state("Massachusetts", year_dataset);
-    let rhode_island_data = filter_state("Rhode Island", year_dataset);
-    let connecticut_data = filter_state("Connecticut", year_dataset);
-    let new_york_data = filter_state("New York", year_dataset);
-    const maine_label = state_labels_senate("Maine", col_10_x, row_1_col_10);
-    const massachusets_label = state_labels_senate("Massachusetts", col_10_x, row_2_col_10);
-    const rhode_island_label = state_labels_senate("Rhode Island", col_10_x, row_3_col_10);
-    const connecticut_label = state_labels_senate("Connecticut", col_10_x, row_4_col_10);
-    const new_york_label = state_labels_senate("New York", col_10_x, row_5_col_10);
-    let maine = construct_senate_seats(2, col_10_x, row_1_col_10, maine_data, "ME");
-    let massachusets = construct_senate_seats(2, col_10_x, row_2_col_10, massachusets_data, "MA");
-    let rhode_island = construct_senate_seats(2, col_10_x, row_3_col_10, rhode_island_data, "RI");
-    let connecticut = construct_senate_seats(2, col_10_x, row_4_col_10, connecticut_data, "CT");
-    let new_york = construct_senate_seats(2, col_10_x, row_5_col_10, new_york_data, "NY");
+    [maine_data, maine_label, maine] = compile_state_senate("Maine", year_dataset, col_10_x, row_1_col_10, 2, "ME");
+    [massachusets_data, massachusets_label, massachusets] = compile_state_senate("Massachusetts", year_dataset, col_10_x, row_2_col_10, 2, "MA");
+    [rhode_island_data, rhode_island_label, rhode_island] = compile_state_senate("Rhode Island", year_dataset, col_10_x, row_3_col_10, 2, "RI");
+    [connecticut_data, connecticut_label, connecticut] = compile_state_senate("Connecticut", year_dataset, col_10_x, row_4_col_10, 2, "CT");
+    [new_york_data, new_york_label, new_york] = compile_state_senate("New York", year_dataset, col_10_x, row_5_col_10, 2, "NY");
 
 }
 
