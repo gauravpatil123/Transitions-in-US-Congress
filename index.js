@@ -1580,7 +1580,11 @@ function compile_state_senate(state_name, year_dataset, dx, dy, cols, state_ini)
 }
 
 function display_senate_seats(year_dataset) {
-    //draws the senate chamber with all its seats
+    /*
+    gets the dataset filtered by year from input
+    sets all the ratios
+    and draws the seats for all states for Senate
+    */
 
     const col_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 3, 3], [5, 4, 4]];
     
