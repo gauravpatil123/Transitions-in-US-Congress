@@ -1170,6 +1170,7 @@ function display_house_seats(year_dataset) {
     [oregon_data, oregon_label, oregon] = compile_state_house("Oregon", year_dataset, col_1_x, row_2_col_1, 5, 4, "OR");
     [california_data, california_label, california] = compile_state_house("California", year_dataset, col_1_x, row_3_col_1, 53, 4, "CA");
 
+    // Drawing House Col 2, states=[idaho, utah, nevada, arizona, new mexico]
     const col_2_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 3, 3], [5, 6, 4], [6, 7, 5]];
     [col_2_x, row_1_col_2, row_2_col_2, row_3_col_2, row_4_col_2, row_5_col_2, row_6_col_2] = compile_coordinates(2, col_2_row_args);
     [idaho_data, idaho_label, idaho] = compile_state_house("Idaho", year_dataset, col_2_x, row_1_col_2, 2, 4, "ID");
