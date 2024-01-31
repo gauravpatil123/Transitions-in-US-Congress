@@ -1613,6 +1613,7 @@ function display_senate_seats(year_dataset) {
     [new_mexico_data, new_mexico_label, new_mexico] = compile_state_senate("New Mexico", year_dataset, col_2_x, row_4_col_2, 2, "NM");
     [alaska_data, alaska_label, alaska] = compile_state_senate("Alaska", year_dataset, col_2_x, row_5_col_2, 2, "AK");
 
+    // Drawing Senate Col 3, states=[montana, wyoming, nebraska, kansas, hawaii]
     [col_3_x, row_1_col_3, row_2_col_3, row_3_col_3, row_4_col_3, row_5_col_3] = compile_coordinates_senate(3, col_row_args);
     [montana_data, montana_label, montana] = compile_state_senate("Montana", year_dataset, col_3_x, row_1_col_3, 2, "MT");
     [wyoming_data, wyoming_label, wyoming] = compile_state_senate("Wyoming", year_dataset, col_3_x, row_2_col_3, 2, "WY");
