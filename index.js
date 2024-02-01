@@ -1653,6 +1653,7 @@ function display_senate_seats(year_dataset) {
     [georgia_data, georgia_label, georgia] = compile_state_senate("Georgia", year_dataset, col_7_x, row_4_col_7, 2, "GA");
     [florida_data, florida_label, florida] = compile_state_senate("Florida", year_dataset, col_7_x, row_5_col_7, 2, "FL");
 
+    // Drawing Senate Col 8, states=[ohio, north carolina, west virginia, virginia, maryland]
     [col_8_x, row_1_col_8, row_2_col_8, row_3_col_8, row_4_col_8, row_5_col_8] = compile_coordinates_senate(8, col_row_args);
     [ohio_data, ohio_label, ohio] = compile_state_senate("Ohio", year_dataset, col_8_x, row_1_col_8, 2, "OH");
     [north_carolina_data, north_carolina_label, north_carolina] = compile_state_senate("North Carolina", year_dataset, col_8_x, row_2_col_8, 2, "NC");
