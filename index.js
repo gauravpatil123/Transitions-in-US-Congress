@@ -1817,6 +1817,12 @@ Promise.all([
     display_presidents(curr_year);
 
     function update_data_slider(curr_year) {
+        /*
+        input:
+            curr_year: year chosen through slider input
+        action:
+            sets the current house & senate data based on the input
+        */
 
         curr_US_House = US_House.filter(d => (d.year == curr_year));
 
