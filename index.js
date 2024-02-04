@@ -1832,6 +1832,12 @@ Promise.all([
 
     function update_chart(curr_year) {
         //function to update the viz based on the year on slider
+        /*
+        input:
+            curr_year: year chosen through slider input
+        action:
+            Updates the visualization based on the chosen year
+        */
 
         svg.selectAll("g")
             .remove();
