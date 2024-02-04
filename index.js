@@ -1898,6 +1898,12 @@ Promise.all([
 
     function chamber_selection(chamber) {
         //sets the css for chamber buttons
+        /*
+        input:
+            chamber: selected current chamber through input button
+        action:
+            sets the css styles for the selected chamber button
+        */
 
         if (chamber == "House") {
 
