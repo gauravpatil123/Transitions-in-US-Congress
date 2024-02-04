@@ -1783,6 +1783,7 @@ Promise.all([
     const US_Senate = files[1].map(d => {return {"year" : +d["Year"], "state" : d.State, "district" : +d.District, "class" : +d.Class, "representative" : d.Representative, "party" : d.Party, "current_cycle" : d["Current Cycle"], "special" : d["Special"]}});
     const US_Congress_Details = files[2];
 
+    //initialising the chart at default state on load
     let curr_US_House = US_House.filter(d => (d.year == 2014));
 
     let curr_US_Senate = US_Senate.filter(d => (d.year == 2014));
