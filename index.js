@@ -1523,7 +1523,7 @@ function row_y_build_senate(row, y_seat_rows, number_states_y = 1) {
 }
 
 function state_labels_senate(state, x, y) {
-    //labels states for senate chamber
+    //draws state label for senate chamber
 
     let fx = xg_s + x;
     let fy = yg_s + y - 5;
