@@ -14,7 +14,11 @@ const svg = d3.select("svg");
 // Filter functions
 function filter_state(state, dataset) {
     /*
-    Returns filtered state dataset from inputs
+    input:
+        state: state name as str
+        dataset: full dataset to be filtered
+    action:
+        returns filtered state dataset from inputs
     */
 
     return dataset.filter(d => (d.state == state));
