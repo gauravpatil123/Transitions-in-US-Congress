@@ -1417,7 +1417,13 @@ function arc_color(d, dataset, year, chamber) {
 
 // Chart title
 function display_chart_title(chamber, value) {
-    //displays chart title depending on chamber
+    /*
+    input:
+        chamber: name of current selected chamber
+        value: curent selected year value
+    action:
+        displays chart title depending on chamber & selected year values
+    */
 
     let chart_text = "United States "
     let x = 0;
