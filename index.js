@@ -71,7 +71,11 @@ function party_color(party) {
 
 function party_color_tooltip(party) {
     /*
-    Identifies input party and return associated hex color for tooltips
+    input:
+        party: political party name as a string
+    output:
+        Identifies input party and 
+        returns associated hex color code for tooltips
     */
 
     if (party == "Republican") {
