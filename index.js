@@ -34,7 +34,11 @@ function get_party(d) {
 
 function party_color(party) {
     /*
-    Identifies input party and return associated hex color for elements
+    input:
+        party: politacal party name as string
+    output:
+        Identifies input party and 
+        returns associated hex color code
     */
 
     if (party == "Republican") {
