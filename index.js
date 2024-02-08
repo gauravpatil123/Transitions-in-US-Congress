@@ -26,7 +26,7 @@ function filter_state(state, dataset) {
 }
 
 function get_party(d) {
-    //Returns party name from the input datapoint
+    //returns party name from the input datapoint
 
     return d.party;
 
@@ -35,7 +35,7 @@ function get_party(d) {
 function party_color(party) {
     /*
     input:
-        party: politacal party name as string
+        party: politcal party name as string
     output:
         Identifies input party and 
         returns associated hex color code
@@ -115,9 +115,13 @@ function log(d) {
 
 function seat_color(d) {
     /*
-    gets party of the datapoint then
-    gets color for that datapoint seat
-    Returns color hex value
+    input:
+        d: single data point from a dataset
+    action:
+        gets party of the datapoint using get_party
+        gets party color for that party using party_color
+    output:
+        returns color hex code value
     */
 
     let party = get_party(d);
