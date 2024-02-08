@@ -130,7 +130,7 @@ function seat_color(d) {
 
 }
 
-// constructing tooltip
+// initalizing tooltip variable
 const tooltip = d3.select("body")
                     .append("div")
                     .attr("id", "tooltip")
@@ -138,8 +138,11 @@ const tooltip = d3.select("body")
 
 function chamber_logo(image_path) {
     /*
-    takes image path
-    draws chamber logo
+    input:
+        image_path: dir path to the image
+    action:
+        takes image path and config variables to set defs svg:pattern
+        draws the chamber chamber logo
     */
 
     var config = {
