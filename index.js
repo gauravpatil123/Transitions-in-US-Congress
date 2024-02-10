@@ -209,7 +209,7 @@ function congress_logo(image_path) {
 }
 
 function details_panel() {
-    // draws details panel container box
+    // draws container box for the details panel
 
     svg.append("rect")
         .attr("x", "1270")
