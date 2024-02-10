@@ -174,8 +174,11 @@ function chamber_logo(image_path) {
 
 function congress_logo(image_path) {
     /*
-    takes image path
-    draws congress logo
+    input:
+        image_path: dir path to the image
+    action:
+        takes image path and config variables to set defs svg:pattern
+        draws the congress logo
     */
 
     var config = {
