@@ -221,9 +221,12 @@ function details_panel() {
 }
 
 function display_presidents_text(name) {
-    /* 
-    takes in president's name
-    displays the name along with text prefix
+    /*
+    input:
+        name: nameof the president as str
+    action: 
+        takes in president's name input &
+        displays the name along with text prefix
     */
 
     svg.append("text")
