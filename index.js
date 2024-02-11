@@ -309,7 +309,12 @@ function display_presidents(year) {
 
 function details_text(dataset, chamber, year) {
     /*
-    builds the text and data text in the deatils panel
+    input:
+        dataset: full datatset for details
+        chamber: chamber name for details as str
+        year: year selected from input event as int
+    action:
+        builds the text and data text in the deatils panel from inputs
     */
 
     //sets variables for lines in the details panel
