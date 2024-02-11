@@ -281,7 +281,10 @@ function display_presidents_and_elect_text(prez_name, elect_name) {
 
 function display_presidents(year) {
     /*
-    Displays presidents text on the viz
+    input:
+        year: selected year from input event as int
+    action:
+        displays presidents text on the viz for the selected year
     */
 
     if (year == 2014) {
