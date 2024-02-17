@@ -697,7 +697,12 @@ function major_events_text_2016(dataset) {
 }
 
 function major_events_text_2018(dataset) {
-    //writes major events for 2018
+    /*
+    input:
+        dataset: congress details dataset (JSON)
+    action:
+        writes(draws) the major events for the congress term of 2018 - 2020
+    */
 
     let congress_data = dataset["Congress"];
     let year_congress_data = congress_data.filter(d => (d.year == 2018));
