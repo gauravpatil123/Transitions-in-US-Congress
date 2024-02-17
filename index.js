@@ -985,7 +985,13 @@ function major_events_text_2020(dataset) {
 }
 
 function major_events(dataset, year) {
-    //writes major events based on the year
+    /*
+    input:
+        dataset: congress details dataset (JSON)
+        year: selected year through input event
+    action:
+        writes(draws) the major events for the selected (year) congress term
+    */
 
     if (year == 2014) {
 
