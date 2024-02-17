@@ -1015,7 +1015,13 @@ function major_events(dataset, year) {
 
 //TODO: Find solutions to make tooltips for unique ids instead of common ids
 function state_tooltips(id, dataset) {
-    //draws tooltips on hover over state seats
+    /*
+    input:
+        id: css id -> (`state`_seat) for the selected datatpoint
+        dataset: filtered dataset from the input
+    action:
+        draws the tooltip & its metedata when the event is triggered through hover
+    */
 
     //console.log(dataset)
     svg.selectAll("#" + id)
