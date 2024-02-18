@@ -1065,11 +1065,12 @@ function construct_seats(seats_num, cols, dx, dy, dataset, state) {
         intialises tooltip events for the cnstructed seats
     */
     
-    let d_xg = xg + dx;
-    let d_yg = yg + dy;
-    let fx = sq_len + sq_gap_x;
-    let fy = sq_len + sq_gap_y;
-    let id = state + "_seat"
+    //initialising relative variables
+    let d_xg = xg + dx; // xg => ground x co-ordinate
+    let d_yg = yg + dy; // yg => ground y co-ordinate
+    let fx = sq_len + sq_gap_x; // sq_len => len of sq (set as global var); sq_gap_x => x gap b/w 2 sq (set as global var)
+    let fy = sq_len + sq_gap_y; // sq_gap_y => y gap b/w 2 sq (set as global var)
+    let id = state + "_seat" // is => css is for current state
     
     function x_val(i) {
 
