@@ -1052,7 +1052,18 @@ function state_tooltips(id, dataset) {
 }
 
 function construct_seats(seats_num, cols, dx, dy, dataset, state) {
-    //constructs seats for states vertically
+    /*
+    input:
+        seats_num: number of seats to be constructed (depretiated)
+        cols: number of cols to be used in arranging the seats
+        dx: starting x co-ordinate
+        dy: starting y co-ordinate
+        dataset: filtered state dataset
+        state: state name as a str
+    action:
+        constructs seats for states vertically
+        intialises tooltip events for the cnstructed seats
+    */
     
     let d_xg = xg + dx;
     let d_yg = yg + dy;
