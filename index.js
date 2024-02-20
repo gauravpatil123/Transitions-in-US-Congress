@@ -1118,7 +1118,17 @@ function construct_seats(seats_num, cols, dx, dy, dataset, state) {
 }
 
 function construct_seats_horizontal(seats_num, rows, dx, dy, dataset) {
-    //constructs seats for states horizontally
+    /*
+    NOTE: Function is depretiated
+    input:
+        seats_num: number of seats to be constructed (depretiated)
+        rows: number of rows to be used in arranging the seats
+        dx: starting x co-ordinate
+        dy: starting y co-ordinate
+        dataset: filtered state dataset
+    action:
+        constructs seats for states vertically
+    */
 
     let d_xg = xg + dx;
     let d_yg = yg + dy;
