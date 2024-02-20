@@ -1073,6 +1073,13 @@ function construct_seats(seats_num, cols, dx, dy, dataset, state) {
     let id = state + "_seat" // is => css is for current state
     
     function x_val(i) {
+        /*
+        input:
+            i: index as a int => index of a sequence from dataset
+        action:
+            returns xf => the final x coordinate for the seat 
+                          for data point at index i from the dataset
+        */
 
         let seat_pos_x = i % cols;
         let xf = d_xg + (seat_pos_x * fx);
