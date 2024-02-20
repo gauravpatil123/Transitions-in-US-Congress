@@ -1130,8 +1130,9 @@ function construct_seats_horizontal(seats_num, rows, dx, dy, dataset) {
         constructs seats for states vertically
     */
 
-    let d_xg = xg + dx;
-    let d_yg = yg + dy;
+    //initialising relative variables
+    let d_xg = xg + dx; // xg => ground x co-ordinate
+    let d_yg = yg + dy; // yg => ground y co-ordinate
     let fx = sq_len + sq_gap_x;
     let fy = sq_len + sq_gap_y;
 
