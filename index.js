@@ -1070,7 +1070,7 @@ function construct_seats(seats_num, cols, dx, dy, dataset, state) {
     let d_yg = yg + dy; // yg => ground y co-ordinate
     let fx = sq_len + sq_gap_x; // sq_len => len of sq (set as global var); sq_gap_x => x gap b/w 2 sq (set as global var)
     let fy = sq_len + sq_gap_y; // sq_gap_y => y gap b/w 2 sq (set as global var)
-    let id = state + "_seat" // is => css is for current state
+    let id = state + "_seat" // id => css is for current state
     
     function x_val(i) {
         /*
@@ -1133,8 +1133,8 @@ function construct_seats_horizontal(seats_num, rows, dx, dy, dataset) {
     //initialising relative variables
     let d_xg = xg + dx; // xg => ground x co-ordinate
     let d_yg = yg + dy; // yg => ground y co-ordinate
-    let fx = sq_len + sq_gap_x;
-    let fy = sq_len + sq_gap_y;
+    let fx = sq_len + sq_gap_x; // sq_len => len of sq (set as global var); sq_gap_x => x gap b/w 2 sq (set as global var)
+    let fy = sq_len + sq_gap_y; // sq_gap_y => y gap b/w 2 sq (set as global var)
 
     function x_val(i) {
 
