@@ -1137,7 +1137,13 @@ function construct_seats_horizontal(seats_num, rows, dx, dy, dataset) {
     let fy = sq_len + sq_gap_y; // sq_gap_y => y gap b/w 2 sq (set as global var)
 
     function x_val(i) {
-
+        /*
+        input:
+            i: index as a int => index of a sequence from dataset
+        action:
+            returns xf => the final x coordinate for the seat 
+                          for data point at index i from the dataset
+        */
         let seat_pos_x = Math.floor(i / rows);
         let xf = d_xg + (seat_pos_x * fx);
         return xf
