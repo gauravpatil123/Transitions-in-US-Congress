@@ -1180,7 +1180,12 @@ function construct_seats_horizontal(seats_num, rows, dx, dy, dataset) {
 
 //TODO: Combine dx dy builder function (below 3) into single function
 function col_x_build(col) {
-    //scale ratios to draw seats
+    /*
+    input:
+        col: col number as an int in which the state belongs to in the visualization
+    returns:
+        out: the starting x coordinate for drawing the state's seats.
+    */
 
     let factor = col - 1
     const out = margin_x + (factor * state_len_x) + (factor * state_gap_x);
