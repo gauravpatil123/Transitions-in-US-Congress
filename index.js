@@ -1151,7 +1151,13 @@ function construct_seats_horizontal(seats_num, rows, dx, dy, dataset) {
     }
 
     function y_val(i) {
-
+        /*
+        input:
+            i: index as a int => index of a sequence from dataset
+        action:
+            returns yf => the final y coordinate for the seat 
+                          for data point at index i from the dataset
+        */
         let seat_pos_y = i % rows;
         let yf = d_yg + (seat_pos_y * fy);
         return yf
