@@ -1194,7 +1194,13 @@ function col_x_build(col) {
 }
 
 function state_len_y(y_seat_rows) {
-    //length between states seats
+    /*
+    input:
+        y_seat_rows: number of rows of seats drawn before the states seats
+    output:
+        out: length calculated to input in calcualtion of the y coordinates 
+             for drawing new states
+    */
 
     const out = (y_seat_rows * sq_len) + ((y_seat_rows - 1) * sq_gap_y);
     return out;
