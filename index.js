@@ -1208,7 +1208,15 @@ function state_len_y(y_seat_rows) {
 }
 
 function row_y_build(row, y_seat_rows, number_states_y = 1) {
-    //ratio y space for state seats
+    /*
+    input:
+        row: current row as an int for the current states in current col
+        y_seat_rows: number of rows of seats drawn before the states seats
+        number_states_y: default set to 1; number of states on the above the current state in the same col
+                         the first state is deafulted as 1
+    output:
+        out: the starting y coordinate for the current state to draw the seats.
+    */
 
     let factor = row - 1;
     let del_f = (number_states_y - 1) * sq_gap_y;
