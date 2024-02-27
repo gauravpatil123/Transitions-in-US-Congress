@@ -1249,11 +1249,17 @@ function state_labels_house(state, x, y) {
 
 function compile_coordinates(col, rows_args) {
     /*
-    gets the column number
-    gets the row arguments: list of list containing the 
-                            inputs(row, y_seat_rows, number_states_y) for calculating dy
-    creates a list of output coordinates conatining the dx & dy for all the inputs
-    returns the coordinate list
+    input:
+        col: current column number for the coordinates to be compiled
+        rows_args: list of list containing the 
+                   inputs (row, y_seat_rows, number_states_y) for calculating dy
+                   for the states to be drawn
+    action:
+        creates a list of output coordinates conatining the dx & dy for all the inputs
+        in the format [dx, ...dy]
+    output:
+        out_list: coordinate list for the (to be drawn)states corresponding to the row_args
+                  in the format [dx, ...dy]
     */
 
     const col_x = col_x_build(col);
@@ -1264,7 +1270,6 @@ function compile_coordinates(col, rows_args) {
         let arg = rows_args[i];
 
         // log(arg.length);
-
         if (arg.length == 2) {
             let row = arg[0];
             let y_seat_rows = arg[1];
