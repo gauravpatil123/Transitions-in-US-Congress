@@ -1227,7 +1227,14 @@ function row_y_build(row, y_seat_rows, number_states_y = 1) {
 }
 
 function state_labels_house(state, x, y) {
-    //writes the state name for all states
+    /*
+    input:
+        state: state name as str
+        x: starting x coordinate
+        y: starting y coordinate
+    action:
+        writes(draws) the input state's name
+    */
 
     let fx = xg + x;
     let fy = yg + y - 5;
