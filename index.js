@@ -1292,11 +1292,20 @@ function compile_coordinates(col, rows_args) {
 
 function compile_state_house(state_name, year_dataset, dx, dy, seat_num, cols, state_ini) {
     /*
-    gets the state name, dataset, corordinates, seats, cols, & initials
-    filters data to state data
-    draws state label
-    constructs seats for the state
-    returns the data, label & seats as a list
+    input:
+        state_name: nameof the state as a str
+        year_dataset: dataset filtered by year
+        dx: starting x coordinate
+        dy: starting y coordinate
+        seat_num: number of seats to be drawn (depretiated)
+        cols: number of cols in the alignment as a int
+        state_ini: state initials (all caps) as a str
+    action:
+        data: creates a dataset with filtered data for the input state
+        state_label: creates the state label
+        state: creates the state var with state seats drawn
+    output:
+        returns a list of the variables created in action
     */
     let data = filter_state(state_name, year_dataset);
     const state_label = state_labels_house(state_name, dx, dy);
