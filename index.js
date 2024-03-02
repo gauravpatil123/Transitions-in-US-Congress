@@ -1418,7 +1418,7 @@ function display_house_seats(year_dataset) {
 
 }
 
-// House arcs
+// House arcs utility variables
 const inner_radius = 100;
 const outer_radius = 150;
 
