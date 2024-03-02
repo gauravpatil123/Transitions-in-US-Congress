@@ -1423,11 +1423,20 @@ const inner_radius = 100;
 const outer_radius = 150;
 
 function construct_arc(data, year, chamber, details_dataset) {
-    //constructs arc below details panel
+    /*
+    input:
+        data: arc dataset constructed for current chamber using build_arc_dataset fxn
+        year: selected year from the input event handle
+        chamber: current selected chamber of the congress
+        details_dataset: the global congress details dataset
+    action:
+        constructs the house arcs for the visualization (below the details panel)
+    */
 
     let dataset = data;
     let half_label_text = 0;
     let total_chamber_label = 0;
+    
     if (chamber == "House") {
         half_label_text = 218;
         total_chamber_label = 435;
