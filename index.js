@@ -1522,7 +1522,18 @@ function construct_arc(data, year, chamber, details_dataset) {
 }
 
 function build_arc_dataset(dataset, year, chamber) {
-    //builds the dataset for arc vizualization based on the year
+    /*
+    input:
+        dataset: congress details dataset (JSON)
+        year: selected year from input event handle
+        chamber: selected chamber of congress through input event handle
+    action:
+        extracts the required data from the input dataset, year & chamber
+        sets local variables
+        arranges the seats data in a list curr_data
+    output:
+        curr_data: list of seats for each party in the selected chamber
+    */
     //TODO: change the function to behave dynamically without micromanaging data
 
     let chamber_data = dataset[chamber];
