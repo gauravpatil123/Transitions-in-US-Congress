@@ -1569,7 +1569,18 @@ function build_arc_dataset(dataset, year, chamber) {
 }
 
 function arc_color(d, dataset, year, chamber) {
-    //sets colors for arc
+    /*
+    input:
+        d: datapoint
+        dataset: congress details dataset
+        year: selected year through input
+        chamber: selected chamber through input
+    action:
+        identifies the party based on the seats
+        returns party color
+    output:
+        hex code color for the identified party using party_color fxn
+    */
     //TODO: cange fxn to work dynamically without micromanaging data
 
     let value = d.value;
