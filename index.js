@@ -1671,6 +1671,13 @@ function construct_senate_seats(cols, dx, dy, dataset, state) {
     let id = state + "_senate_seat"
 
     function x_val(i) {
+        /*
+        input:
+            i: index as a int => index of a sequence from dataset
+        action:
+            returns xf => the final x coordinate for the seat 
+                          for data point at index i from the dataset
+        */
 
         let seat_pos_x = i % cols;
         let xf = d_xg + (seat_pos_x * fx);
