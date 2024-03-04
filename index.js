@@ -1062,7 +1062,7 @@ function construct_seats(seats_num, cols, dx, dy, dataset, state) {
         state: state name as a str
     action:
         constructs seats for states vertically
-        intialises tooltip events for the cnstructed seats
+        intialises tooltip events for the constructed seats
     */
     
     //initialising relative variables
@@ -1652,7 +1652,17 @@ const senate_state_gap_x = 50;
 const senate_state_gap_y = 25;
 
 function construct_senate_seats(cols, dx, dy, dataset, state) {
-    //constructs seats for senate chamber
+    /*
+    input:
+        cols: number of cols to be used in arranging the seats
+        dx: starting x co-ordinate
+        dy: starting y co-ordinate
+        dataset: filtered state dataset
+        state: state name as a str
+    action:
+        constructs senate seats for states vertically
+        intialises tooltip events for the constructed seats
+    */
 
     let d_xg = xg_s + dx;
     let d_yg = yg_s + dy;
