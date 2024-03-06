@@ -1718,7 +1718,12 @@ function construct_senate_seats(cols, dx, dy, dataset, state) {
 }
 
 function col_x_build_senate(col) {
-    //scale ratios to draw seats
+    /*
+    input:
+        col: col number as an int in which the state belongs to in the visualization
+    returns:
+        out: the starting x coordinate for drawing the state's senate seats.
+    */
 
     let factor = col - 1
     const out = margin_x_senate + (factor * senate_state_len_x) + (factor * senate_state_gap_x);
