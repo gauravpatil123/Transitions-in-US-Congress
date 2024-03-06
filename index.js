@@ -1686,6 +1686,13 @@ function construct_senate_seats(cols, dx, dy, dataset, state) {
     }
 
     function y_val(i) {
+        /*
+        input:
+            i: index as a int => index of a sequence from dataset
+        action:
+            returns yf => the final y coordinate for the seat 
+                          for data point at index i from the dataset
+        */
 
         let seat_pos_y = Math.floor(i / cols);
         let yf = d_yg + (seat_pos_y * fy);
