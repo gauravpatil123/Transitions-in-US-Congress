@@ -1732,7 +1732,13 @@ function col_x_build_senate(col) {
 }
 
 function state_len_y_senate(y_seat_rows) {
-    //factor distance between states senate seats
+    /*
+    input:
+        y_seat_rows: number of rows of seats drawn before the states senate seats
+    output:
+        out: length calculated to input in calculation of the y coordinates 
+             for drawing new states senate seats
+    */
 
     const out = (y_seat_rows * s_sq_len) + ((y_seat_rows - 1) * s_sq_gap_y);
     return out;
