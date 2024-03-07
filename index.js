@@ -1746,7 +1746,15 @@ function state_len_y_senate(y_seat_rows) {
 }
 
 function row_y_build_senate(row, y_seat_rows, number_states_y = 1) {
-    //y distance for senate seats
+    /*
+    input:
+        row: current row as an int for the current states in current col
+        y_seat_rows: number of rows of seats drawn before the states seats
+        number_states_y: default set to 1; number of states on the above the current state in the same col
+                         the first state is deafulted as 1
+    output:
+        out: the starting y coordinate for the current state to draw the senate seats.
+    */
 
     let factor = row - 1;
     let state_len = state_len_y_senate(y_seat_rows);
