@@ -1764,7 +1764,14 @@ function row_y_build_senate(row, y_seat_rows, number_states_y = 1) {
 }
 
 function state_labels_senate(state, x, y) {
-    //draws state label for senate chamber
+    /*
+    input:
+        state: state name as str
+        x: starting x coordinate
+        y: starting y coordinate
+    action:
+        writes(draws) the input state's name
+    */
 
     let fx = xg_s + x;
     let fy = yg_s + y - 5;
