@@ -1844,7 +1844,7 @@ function compile_state_senate(state_name, year_dataset, dx, dy, cols, state_ini)
     output:
         returns a list of the variables created in action
     */
-   
+
     let data = filter_state(state_name, year_dataset);
     const state_label = state_labels_senate(state_name, dx, dy);
     let state = construct_senate_seats(cols, dx, dy, data, state_ini);
@@ -1853,9 +1853,12 @@ function compile_state_senate(state_name, year_dataset, dx, dy, cols, state_ini)
 
 function display_senate_seats(year_dataset) {
     /*
-    gets the dataset filtered by year from input
-    sets all the ratios
-    and draws the seats for all states for Senate
+    input:
+        year_dataset: dataset filtered for the selected year
+    action:
+        sets the row args for all the states in the sequence of visualization columns
+        gets the coordinates for all states using compile_coordinates_senate fxn
+        draws the seats of senate for all the states in the same sequence using compile_state_senate fxn
     */
 
     const col_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 3, 3], [5, 4, 4]];
