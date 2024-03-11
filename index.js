@@ -2038,6 +2038,8 @@ function display_senate_grid(cols, dx, dy) {
 
 }
 
+//NOTE: End of depretiated grid view feature
+
 //loading dataset
 Promise.all([
     d3.csv("data/Data Collection House  - 2014 - 2020.csv"),
