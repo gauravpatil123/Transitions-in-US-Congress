@@ -2053,9 +2053,9 @@ Promise.all([
     const US_Congress_Details = files[2];
 
     /*
-    initialising the data vis at default state on load
-        default state chamber: House
-        default state year: 2014
+    initializing the data vis in default state on load
+    default state chamber: House
+    default state year: 2014
     */
     
     let curr_US_House = US_House.filter(d => (d.year == 2014));
