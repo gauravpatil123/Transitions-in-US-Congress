@@ -2058,6 +2058,10 @@ Promise.all([
     default state year: 2014
     */
     
+    /*
+    MAIN VIZUALIZATION FLOW
+    */
+
     let curr_US_House = US_House.filter(d => (d.year == 2014));
 
     let curr_US_Senate = US_Senate.filter(d => (d.year == 2014));
