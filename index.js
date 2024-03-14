@@ -2062,6 +2062,7 @@ Promise.all([
     MAIN VIZUALIZATION FLOW
     */
 
+    //setting initial variables
     let curr_US_House = US_House.filter(d => (d.year == 2014));
 
     let curr_US_Senate = US_Senate.filter(d => (d.year == 2014));
