@@ -2075,6 +2075,7 @@ Promise.all([
 
     let curr_year = 2014;
 
+    //starting setting up the visualization
     congress_logo("data/images/Congress_Seal.png");
 
     chamber_logo("data/images/House.png");
