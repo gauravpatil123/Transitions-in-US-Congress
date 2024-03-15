@@ -2225,6 +2225,7 @@ Promise.all([
 
     d3.select("#Senate")
         .on("click", (event, d) => {
+        //event listener for the Senate button
 
             curr_chamber = "Senate";
             update_chart(curr_year);
