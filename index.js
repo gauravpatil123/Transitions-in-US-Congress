@@ -2216,7 +2216,7 @@ Promise.all([
 
     d3.select("#House")
         .on("click", (event, d) => {
-
+        //event listener for the House button
             curr_chamber = "House";
             update_chart(curr_year);
             chamber_selection(curr_chamber);
