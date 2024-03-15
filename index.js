@@ -2205,7 +2205,8 @@ Promise.all([
     //event listeners for viz
     d3.select("input")
         .on("change", (event, d) => {
-
+        //event listener for the year slider
+        
         currYear = event.currentTarget.value;
         curr_year = currYear;
         update_data_slider(currYear);
