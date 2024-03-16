@@ -2187,7 +2187,7 @@ Promise.all([
         if (chamber == "House") {
 
             $("#House").css("border", "0.05em solid #E81B23"); //border with red shade
-            $("#House").css("color", "#333333");
+            $("#House").css("color", "#333333"); //black text color
             $("#Senate").css("border", "none");
             $("#Senate").css("color", "white");
 
