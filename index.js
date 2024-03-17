@@ -2187,9 +2187,9 @@ Promise.all([
         if (chamber == "House") {
 
             $("#House").css("border", "0.05em solid #E81B23"); //border with red shade for house button
-            $("#House").css("color", "#333333"); //black text color
+            $("#House").css("color", "#333333"); //black text color for house button
             $("#Senate").css("border", "none"); //no border for senate button
-            $("#Senate").css("color", "white");
+            $("#Senate").css("color", "white"); //white text color for senate button
 
         } else if (chamber == "Senate") {
 
