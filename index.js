@@ -2193,7 +2193,7 @@ Promise.all([
 
         } else if (chamber == "Senate") {
 
-            $("#Senate").css("border", "0.05em solid #E81B23");
+            $("#Senate").css("border", "0.05em solid #E81B23"); //border with red shade for senate button
             $("#Senate").css("color", "#333333");
             $("#House").css("border", "none");
             $("#House").css("color", "white");
