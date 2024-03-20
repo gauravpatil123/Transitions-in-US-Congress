@@ -2129,6 +2129,7 @@ Promise.all([
         svg.selectAll("text")
             .remove();
 
+        // chart update based on current selected chamber from event handles
         if (curr_chamber == "House") {
 
             congress_logo('data/images/Congress_Seal.png');
