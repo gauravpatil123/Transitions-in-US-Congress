@@ -2119,6 +2119,7 @@ Promise.all([
             Updates the visualization based on the chosen year
         */
 
+        // removing rendered elements
         svg.selectAll("g")
             .remove();
 
