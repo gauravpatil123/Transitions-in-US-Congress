@@ -640,6 +640,7 @@ function major_events_text_2016(dataset) {
     let start_y = 80;
     let del_y = 30;
 
+    //writing major events
     let e1 = svg.append("text")
                 .attr("x", "1800")
                 .attr("y", start_y)
