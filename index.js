@@ -454,6 +454,8 @@ function details_text(dataset, chamber, year) {
         /*
         input:
             chamber_bills_dataset: filtered dataset from details dataset for chamber bills data
+        output:
+            returns list of numbers indicating introduces, reported, passes bills respectively as metadata
         */
         // returns list of bills metadata
 
