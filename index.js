@@ -451,6 +451,10 @@ function details_text(dataset, chamber, year) {
 
     // function to get the data of bills for the selected chamber
     function build_bills_data(chamber_bills_dataset) {
+        /*
+        input:
+            chamber_bills_dataset: filtered dataset from details dataset for chamber bills data
+        */
         // returns list of bills metadata
 
         let introduced = +chamber_bills_dataset.introduced;
