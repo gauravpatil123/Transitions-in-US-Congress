@@ -1,3 +1,4 @@
+//global variables
 const xg = 10;
 const yg = 114;
 const sq_gap_x = 5;
