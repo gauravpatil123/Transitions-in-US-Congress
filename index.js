@@ -457,7 +457,6 @@ function details_text(dataset, chamber, year) {
         output:
             returns list of numbers indicating introduces, reported, passes bills respectively as metadata
         */
-        // returns list of bills metadata
 
         let introduced = +chamber_bills_dataset.introduced;
         let reported = +chamber_bills_dataset.reported;
