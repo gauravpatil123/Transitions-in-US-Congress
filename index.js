@@ -12,7 +12,7 @@ const state_gap_y = 60;
 
 const svg = d3.select("svg");
 
-// Filter functions
+// utility functions
 function filter_state(state, dataset) {
     /*
     input:
