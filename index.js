@@ -38,7 +38,7 @@ function party_color(party) {
     input:
         party: politcal party name as string
     output:
-        Identifies input party and 
+        Identifies input party str and 
         returns associated hex color code
     */
 
