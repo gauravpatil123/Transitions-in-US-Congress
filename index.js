@@ -827,7 +827,7 @@ function major_events_text_2020(dataset) {
     input:
         dataset: congress details dataset (JSON)
     action:
-        writes(draws) the major events for the congress term of 2020 - 2022
+        writes/draws the major events for the congress term of 2020 - 2022
     */
 
     let congress_data = dataset["Congress"];
