@@ -1000,7 +1000,7 @@ function major_events(dataset, year) {
         dataset: congress details dataset (JSON)
         year: selected year through input event
     action:
-        writes(draws) the major events for the selected (year) congress term
+        writes/draws) the major events for the selected (year) congress term
     */
 
     if (year == 2014) {
