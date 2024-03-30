@@ -1334,7 +1334,7 @@ function display_house_seats(year_dataset) {
         draws the seats of HOR for all the states in the same sequence using compile_state_house fxn
     */
 
-    // Drawing House Col 1, states=[washington, oregon, california]
+    // drawing House Col 1, states=[washington, oregon, california]
     const col_1_row_args = [[1, 0], [2, 3, 1], [3, 5, 2]];
     [col_1_x, row_1_col_1, row_2_col_1, row_3_col_1] = compile_coordinates(1, col_1_row_args);
     [washington_data, washigton_label, washington] = compile_state_house("Washington", year_dataset, col_1_x, row_1_col_1, 10, 4, "WA");
