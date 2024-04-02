@@ -1334,14 +1334,14 @@ function display_house_seats(year_dataset) {
         draws the seats of HOR for all the states in the same sequence using compile_state_house fxn
     */
 
-    // drawing House Col 1, states=[washington, oregon, california]
+    // drawing House col 1, states=[washington, oregon, california]
     const col_1_row_args = [[1, 0], [2, 3, 1], [3, 5, 2]];
     [col_1_x, row_1_col_1, row_2_col_1, row_3_col_1] = compile_coordinates(1, col_1_row_args);
     [washington_data, washigton_label, washington] = compile_state_house("Washington", year_dataset, col_1_x, row_1_col_1, 10, 4, "WA");
     [oregon_data, oregon_label, oregon] = compile_state_house("Oregon", year_dataset, col_1_x, row_2_col_1, 5, 4, "OR");
     [california_data, california_label, california] = compile_state_house("California", year_dataset, col_1_x, row_3_col_1, 53, 4, "CA");
 
-    // Drawing House Col 2, states=[idaho, utah, nevada, arizona, new mexico, texas]
+    // drawing House Col 2, states=[idaho, utah, nevada, arizona, new mexico, texas]
     const col_2_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 3, 3], [5, 6, 4], [6, 7, 5]];
     [col_2_x, row_1_col_2, row_2_col_2, row_3_col_2, row_4_col_2, row_5_col_2, row_6_col_2] = compile_coordinates(2, col_2_row_args);
     [idaho_data, idaho_label, idaho] = compile_state_house("Idaho", year_dataset, col_2_x, row_1_col_2, 2, 4, "ID");
