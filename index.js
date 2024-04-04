@@ -1361,7 +1361,7 @@ function display_house_seats(year_dataset) {
     [kansas_data, kansas_label, kansas] = compile_state_house("Kansas", year_dataset, col_3_x, row_4_col_3, 4, 4, "KS");
     [oklahoma_data, oklahoma_label, oklahoma] = compile_state_house("Oklahoma", year_dataset, col_3_x, row_5_col_3, 5, 4, "OK");
     
-    // drawing House Col 4, states=[north dacota, south dacota, nebraska, arkansas, louisiana, alaska, hawaii]
+    // drawing House col 4, states=[north dacota, south dacota, nebraska, arkansas, louisiana, alaska, hawaii]
     const col_4_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 3, 3], [5, 4, 4], [6, 6, 5], [7, 7, 6]];
     [col_4_x, row_1_col_4, row_2_col_4, row_3_col_4, row_4_col_4, row_5_col_4, row_6_col_4, row_7_col_4] = compile_coordinates(4, col_4_row_args);
     [north_dacota_data, north_dacota_label, north_dacota] = compile_state_house("North Dakota", year_dataset, col_4_x, row_1_col_4, 1, 4, "ND");
