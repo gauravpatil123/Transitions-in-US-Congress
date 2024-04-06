@@ -1372,7 +1372,7 @@ function display_house_seats(year_dataset) {
     [alaska_data, alaska_label, alaska] = compile_state_house("Alaska", year_dataset, col_4_x, row_6_col_4, 1, 4, "AK");
     [hawaii_data, hawaii_label, hawaii] = compile_state_house("Hawaii", year_dataset, col_4_x, row_7_col_4, 2, 4, "HI");
     
-    // Drawing House Col 5, states=[minnesota, iowa, missouri, kentucky, tennessee, mississippi]
+    // drawing House Col 5, states=[minnesota, iowa, missouri, kentucky, tennessee, mississippi]
     const col_5_row_args = [[1, 0], [2, 2, 1], [3, 3, 2], [4, 5, 3], [5, 7, 4], [6, 10, 5]];
     [col_5_x, row_1_col_5, row_2_col_5, row_3_col_5, row_4_col_5, row_5_col_5, row_6_col_5] = compile_coordinates(5, col_5_row_args);
     [minnesota_data, minnesota_label, minnesota] = compile_state_house("Minnesota", year_dataset, col_5_x, row_1_col_5, 8, 4, "MN");
