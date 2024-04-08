@@ -1391,7 +1391,7 @@ function display_house_seats(year_dataset) {
     [alabama_data, alabama_label, alabama] = compile_state_house("Alabama", year_dataset, col_6_x, row_4_col_6, 7, 4, "AL");
     [georgia_data, georgia_label, georgia] = compile_state_house("Georgia", year_dataset, col_6_x, row_5_col_6, 14, 4, "GA");
     
-    // Drawing House Col 7, states=[michigan, ohio, west virginia, virginia, florida]
+    // drawing House Col 7, states=[michigan, ohio, west virginia, virginia, florida]
     const col_7_row_args = [[1, 0], [2, 4, 1], [3, 8, 2], [4, 9, 3], [5, 12, 4]];
     [col_7_x, row_1_col_7, row_2_col_7, row_3_col_7, row_4_col_7, row_5_col_7] = compile_coordinates(7, col_7_row_args);
     [michigan_data, michigan_label, michigan] = compile_state_house("Michigan", year_dataset, col_7_x, row_1_col_7, 14, 4, "MI");
