@@ -1401,7 +1401,7 @@ function display_house_seats(year_dataset) {
 
     [florida_data, florida_label, florida] = compile_state_house("Florida", year_dataset, col_7_x, row_5_col_7, 27, 7, "FL");
 
-    // drawing House Col 8, states=[pennsylvania, north carolina, south carolina]
+    // drawing House col 8, states=[pennsylvania, north carolina, south carolina]
     const col_8_row_args = [[1, 0], [2, 5, 1], [3, 9, 2]];
     [col_8_x, row_1_col_8, row_2_col_8, row_3_col_8] = compile_coordinates(8, col_8_row_args);
     [pennsylvania_data, pennsylvania_label, pennsylvania] = compile_state_house("Pennsylvania", year_dataset, col_8_x, row_1_col_8, 18, 4, "PA");
