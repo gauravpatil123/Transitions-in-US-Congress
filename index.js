@@ -1408,7 +1408,7 @@ function display_house_seats(year_dataset) {
     [north_carolina_data, north_carolina_label, north_carolina] = compile_state_house("North Carolina", year_dataset, col_8_x, row_2_col_8, 13, 4, "NC");
     [south_carolina_data, south_carolina_label, south_carolina] = compile_state_house("South Carolina", year_dataset, col_8_x, row_3_col_8, 7, 4, "SC");
     
-    // drawing House Col 9, states=[vermont, new hampshire, new york, new jersey, maryland]
+    // drawing House col 9, states=[vermont, new hampshire, new york, new jersey, maryland]
     const col_9_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 9, 3], [5, 12, 4]];
     [col_9_x, row_1_col_9, row_2_col_9, row_3_col_9, row_4_col_9, row_5_col_9] = compile_coordinates(9, col_9_row_args);
     [vermont_data, vermont_label, vermont] = compile_state_house("Vermont", year_dataset, col_9_x, row_1_col_9, 1, 4, "VT");
