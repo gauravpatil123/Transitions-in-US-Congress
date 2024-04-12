@@ -1448,6 +1448,7 @@ function construct_arc(data, year, chamber, details_dataset) {
     let half_label_text = 0;
     let total_chamber_label = 0;
     
+    // setting variables based on selected chamber from event handle
     if (chamber == "House") {
         half_label_text = 218;
         total_chamber_label = 435;
