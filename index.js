@@ -1443,6 +1443,7 @@ function construct_arc(data, year, chamber, details_dataset) {
         constructs the house arcs for the visualization (below the details panel)
     */
 
+    // initializing variables
     let dataset = data;
     let half_label_text = 0;
     let total_chamber_label = 0;
