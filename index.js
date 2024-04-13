@@ -1457,6 +1457,7 @@ function construct_arc(data, year, chamber, details_dataset) {
         total_chamber_label = 100;
     };
 
+    //setting arc charts
     let arcs = d3.arc()
             .innerRadius(inner_radius)
             .outerRadius(outer_radius);
