@@ -1462,6 +1462,7 @@ function construct_arc(data, year, chamber, details_dataset) {
             .innerRadius(inner_radius)
             .outerRadius(outer_radius);
 
+    //setting rings fxn for pie chart
     let rings = d3.pie()
             .padAngle(0.009)
             .startAngle(-0.5 * Math.PI)
