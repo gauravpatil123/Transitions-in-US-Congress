@@ -1475,6 +1475,7 @@ function construct_arc(data, year, chamber, details_dataset) {
                     .attr("class", "arcs")
                     .attr("transform", "translate(1500, 720)");
 
+    // adding attributes to arcs
     groups.append("path")
             .attr("fill", d => (arc_color(d, details_dataset, year, chamber)))
             .attr("d", arcs);
