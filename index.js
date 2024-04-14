@@ -1468,6 +1468,7 @@ function construct_arc(data, year, chamber, details_dataset) {
             .startAngle(-0.5 * Math.PI)
             .endAngle(0.5 * Math.PI);
 
+    // drawing group elements => arcs
     let groups = svg.selectAll("g.arc")
                     .data(rings(dataset))
                     .join("g")
