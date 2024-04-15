@@ -1480,6 +1480,7 @@ function construct_arc(data, year, chamber, details_dataset) {
             .attr("fill", d => (arc_color(d, details_dataset, year, chamber)))
             .attr("d", arcs);
 
+    //local logging function
     function log(d) {
 
         console.log(d);
