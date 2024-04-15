@@ -1487,6 +1487,7 @@ function construct_arc(data, year, chamber, details_dataset) {
 
     }
 
+    //setting variables from dataset
     let l1_text = dataset[0];
     let l2_text = dataset[1];
     let l1_x = 1361;
