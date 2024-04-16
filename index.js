@@ -1493,6 +1493,7 @@ function construct_arc(data, year, chamber, details_dataset) {
     let l1_x = 1361;
     let l2_x = 1614;
 
+    //setting text and co-ordinates manually for l1 & l2
     if (l1_text < 50 ) {
 
         l1_text = l1_text + " + 2";
