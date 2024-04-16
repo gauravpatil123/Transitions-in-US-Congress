@@ -1507,6 +1507,7 @@ function construct_arc(data, year, chamber, details_dataset) {
         l2_x = l2_x - 10;
     };
 
+    //drawing elements on the viz
     let l1_label = svg.append("text")
                         .attr("x", l1_x)
                         .attr("y", 735)
