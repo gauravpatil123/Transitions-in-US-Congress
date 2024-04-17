@@ -1637,6 +1637,7 @@ function display_chart_title(chamber, value) {
         displays chart title depending on chamber & selected year values
     */
 
+    //setting local variables
     let chart_text = "United States "
     let x = 0;
 
