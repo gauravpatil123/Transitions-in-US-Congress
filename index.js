@@ -1651,6 +1651,7 @@ function display_chart_title(chamber, value) {
 
     chart_text += value;
 
+    //display varibales on viz
     svg.append("text")
         .attr("x", x)
         .attr("y", 60)
