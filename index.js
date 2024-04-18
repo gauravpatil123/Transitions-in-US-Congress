@@ -1660,7 +1660,7 @@ function display_chart_title(chamber, value) {
 
 }
 
-// senate variables
+// senate global variables
 const xg_s = 30;
 const yg_s = 190;
 const s_sq_gap_x = 10;
