@@ -1686,6 +1686,7 @@ function construct_senate_seats(cols, dx, dy, dataset, state) {
         intialises tooltip events for the constructed seats
     */
 
+    //initializing local variables
     let d_xg = xg_s + dx;
     let d_yg = yg_s + dy;
     let fx = s_sq_len + s_sq_gap_x;
