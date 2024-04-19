@@ -1702,6 +1702,7 @@ function construct_senate_seats(cols, dx, dy, dataset, state) {
                           for data point at index i from the dataset
         */
 
+        //x val calculation
         let seat_pos_x = i % cols;
         let xf = d_xg + (seat_pos_x * fx);
         return xf
