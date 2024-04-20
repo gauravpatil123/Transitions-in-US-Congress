@@ -1725,6 +1725,7 @@ function construct_senate_seats(cols, dx, dy, dataset, state) {
 
     }
 
+    //drawing arc group elements
     svg.selectAll("g")
         .data(dataset)
         .join("rect")
