@@ -1751,6 +1751,7 @@ function col_x_build_senate(col) {
         out: the starting x coordinate for drawing the state's senate seats.
     */
 
+    //calculating starting x coordinate
     let factor = col - 1
     const out = margin_x_senate + (factor * senate_state_len_x) + (factor * senate_state_gap_x);
     return out;
