@@ -1767,6 +1767,7 @@ function state_len_y_senate(y_seat_rows) {
              for drawing new states senate seats
     */
 
+    //calculating length
     const out = (y_seat_rows * s_sq_len) + ((y_seat_rows - 1) * s_sq_gap_y);
     return out;
 
