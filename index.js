@@ -1784,6 +1784,7 @@ function row_y_build_senate(row, y_seat_rows, number_states_y = 1) {
         out: the starting y coordinate for the current state to draw the senate seats.
     */
 
+    //calculating starting y coordinate
     let factor = row - 1;
     let state_len = state_len_y_senate(y_seat_rows);
     const out = margin_y_senate + (state_len) + (factor * senate_state_gap_y);
