@@ -1806,6 +1806,7 @@ function state_labels_senate(state, x, y) {
     let fx = xg_s + x;
     let fy = yg_s + y - 5;
 
+    //drawing label
     svg.append("text")
         .attr("x", fx)
         .attr("y", fy)
