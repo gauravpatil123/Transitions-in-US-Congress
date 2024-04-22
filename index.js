@@ -1802,6 +1802,7 @@ function state_labels_senate(state, x, y) {
         writes(draws) the input state's name
     */
 
+    //initialising local coordinates
     let fx = xg_s + x;
     let fy = yg_s + y - 5;
 
