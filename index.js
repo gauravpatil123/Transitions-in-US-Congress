@@ -1830,6 +1830,7 @@ function compile_coordinates_senate(col, rows_args) {
                   in the format [dx, ...dy]
     */
 
+    //building out_list
     const col_x = col_x_build_senate(col);
     let out_list = [col_x];
 
