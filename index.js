@@ -1877,6 +1877,7 @@ function compile_state_senate(state_name, year_dataset, dx, dy, cols, state_ini)
         returns a list of the variables created in action
     */
 
+    //creating output list
     let data = filter_state(state_name, year_dataset);
     const state_label = state_labels_senate(state_name, dx, dy);
     let state = construct_senate_seats(cols, dx, dy, data, state_ini);
