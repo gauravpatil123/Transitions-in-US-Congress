@@ -1896,7 +1896,7 @@ function display_senate_seats(year_dataset) {
 
     const col_row_args = [[1, 0], [2, 1, 1], [3, 2, 2], [4, 3, 3], [5, 4, 4]];
     
-    // Drawing Senate Col 1, states=[washington, oregon, nevada, arizona, california]
+    // drawing Senate Col 1, states=[washington, oregon, nevada, arizona, california]
     [col_1_x, row_1_col_1, row_2_col_1, row_3_col_1, row_4_col_1, row_5_col_1] = compile_coordinates_senate(1, col_row_args);
     [washington_data, washington_label, washington] = compile_state_senate("Washington", year_dataset, col_1_x, row_1_col_1, 2, "WA");
     [oregon_data, oregon_label, oregon] = compile_state_senate("Oregon", year_dataset, col_1_x, row_2_col_1, 2, "OR");
