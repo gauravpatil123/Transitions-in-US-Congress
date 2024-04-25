@@ -1904,7 +1904,7 @@ function display_senate_seats(year_dataset) {
     [arizona_data, arizona_label, arizona] = compile_state_senate("Arizona", year_dataset, col_1_x, row_4_col_1, 2, "AZ");
     [california_data, california_label, california] = compile_state_senate("California", year_dataset, col_1_x, row_5_col_1, 2, "CA");
 
-    // drawing Senate Col 2, states=[idaho, utah, colorado, new mexico, alaska]
+    // drawing Senate col 2, states=[idaho, utah, colorado, new mexico, alaska]
     [col_2_x, row_1_col_2, row_2_col_2, row_3_col_2, row_4_col_2, row_5_col_2] = compile_coordinates_senate(2, col_row_args);
     [idaho_data, idaho_label, idaho] = compile_state_senate("Idaho", year_dataset, col_2_x, row_1_col_2, 2, "ID");
     [utah_data, utah_label, utah] = compile_state_senate("Utah", year_dataset, col_2_x, row_2_col_2, 2, "UT");
