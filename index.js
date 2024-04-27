@@ -1920,7 +1920,7 @@ function display_senate_seats(year_dataset) {
     [kansas_data, kansas_label, kansas] = compile_state_senate("Kansas", year_dataset, col_3_x, row_4_col_3, 2, "KS");
     [hawaii_data, hawaii_label, hawaii] = compile_state_senate("Hawaii", year_dataset, col_3_x, row_5_col_3, 2, "HI");
 
-    // drawing Senate Col 4, states=[north dacota, south dacota, missouri, arkansas, texas]
+    // drawing Senate col 4, states=[north dacota, south dacota, missouri, arkansas, texas]
     [col_4_x, row_1_col_4, row_2_col_4, row_3_col_4, row_4_col_4, row_5_col_4] = compile_coordinates_senate(4, col_row_args);
     [north_dacota_data, north_dacota_label, north_dacota] = compile_state_senate("North Dakota", year_dataset, col_4_x, row_1_col_4, 2, "ND");
     [south_dacota_data, south_dacota_label, south_dacota] = compile_state_senate("South Dakota", year_dataset, col_4_x, row_2_col_4, 2, "SD");
