@@ -1936,7 +1936,7 @@ function display_senate_seats(year_dataset) {
     [mississippi_data, mississippi_label, mississippi] = compile_state_senate("Mississippi", year_dataset, col_5_x, row_4_col_5, 2, "MS");
     [oklahoma_data, oklahoma_label, oklahoma] = compile_state_senate("Oklahoma", year_dataset, col_5_x, row_5_col_5, 2, "OK");
 
-    // Drawing Senate Col 6, states=[wisconsin, illinois, tennessee, alabama, louisiana]
+    // drawing Senate Col 6, states=[wisconsin, illinois, tennessee, alabama, louisiana]
     [col_6_x, row_1_col_6, row_2_col_6, row_3_col_6, row_4_col_6, row_5_col_6] = compile_coordinates_senate(6, col_row_args);
     [wisconsin_data, wisconsin_label, wisconsin] = compile_state_senate("Wisconsin", year_dataset, col_6_x, row_1_col_6, 2, "WI");
     [illinois_data, illinois_label, illinois] = compile_state_senate("Illinois", year_dataset, col_6_x, row_2_col_6, 2, "IL");
