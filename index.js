@@ -1960,7 +1960,7 @@ function display_senate_seats(year_dataset) {
     [virginia_data, virginia_label, virginia] = compile_state_senate("Virginia", year_dataset, col_8_x, row_4_col_8, 2, "VA");
     [maryland_data, maryland_label, maryland] = compile_state_senate("Maryland", year_dataset, col_8_x, row_5_col_8, 2, "MD");
 
-    // drawing Senate Col 9, states=[vermont, new hampshire, pennsylvania, new jersey, delaware]
+    // drawing Senate col 9, states=[vermont, new hampshire, pennsylvania, new jersey, delaware]
     [col_9_x, row_1_col_9, row_2_col_9, row_3_col_9, row_4_col_9, row_5_col_9] = compile_coordinates_senate(9, col_row_args);
     [vermont_data, vermont_label, vermont] = compile_state_senate("Vermont", year_dataset, col_9_x, row_1_col_9, 2, "VT");
     [new_hampshire_data, new_hampshire_label, new_hampshire] = compile_state_senate("New Hampshire", year_dataset, col_9_x, row_2_col_9, 2, "NH");
