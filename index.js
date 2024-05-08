@@ -1978,7 +1978,7 @@ function display_senate_seats(year_dataset) {
 
 }
 
-//NOTE: Depretiated feature module for grid view for the visualization
+//NOTE: depretiated feature module for grid view for the visualization
 // grid collapse house
 const xg_grid = 10;
 const yg_grid = 100;
