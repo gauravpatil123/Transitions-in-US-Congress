@@ -1129,7 +1129,7 @@ function construct_seats(seats_num, cols, dx, dy, dataset, state) {
 
 function construct_seats_horizontal(seats_num, rows, dx, dy, dataset) {
     /*
-    NOTE: Function is depretiated
+    NOTE: function is depretiated
     input:
         seats_num: number of seats to be constructed (depretiated)
         rows: number of rows to be used in arranging the seats
