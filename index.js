@@ -2034,7 +2034,7 @@ const s_sq_len_grid = 50;
 
 function construct_senate_grid(cols, dx, dy) {
     //placeholder fxn for senate grid view
-    //TODO: Implement this feature
+    //TODO: implement this feature
 
     let d_xg = xg + dx;
     let d_yg = yg + dy;
