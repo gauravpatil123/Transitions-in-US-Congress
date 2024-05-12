@@ -2071,7 +2071,7 @@ function display_senate_grid(cols, dx, dy) {
 
 }
 
-//NOTE: End of depretiated grid view feature
+//NOTE: end of depretiated grid view feature
 
 //loading dataset
 Promise.all([
