@@ -2092,7 +2092,7 @@ Promise.all([
     */
     
     /*
-    MAIN VIZUALIZATION FLOW
+    MAIN VIZUALIZATION CODE FLOW
     */
 
     //setting initial variables
