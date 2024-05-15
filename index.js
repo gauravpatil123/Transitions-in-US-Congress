@@ -2144,7 +2144,7 @@ Promise.all([
     }
 
     function update_chart(curr_year) {
-        //function to update the viz based on the year on slider
+        //function to update the viz based on the year on slider=>event handle
         /*
         input:
             curr_year: year chosen through slider input
